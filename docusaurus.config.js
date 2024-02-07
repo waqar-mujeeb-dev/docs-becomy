@@ -12,16 +12,10 @@ const config = {
   tagline: 'Versatile Ecommerce Solution',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://https://waqar-mujeeb-dev.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs-becomy/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'equipTechnique', // Usually your GitHub org/user name.
-  projectName: 'docs-becomy', // Usually your repo name.
+  url: 'https://docs.becomy.com',
+  baseUrl: '/',
+  organizationName: 'becomy',
+  projectName: 'docs-becomy',
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
