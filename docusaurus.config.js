@@ -12,7 +12,7 @@ const config = {
   tagline: 'Versatile Ecommerce Solution',
   favicon: 'img/favicon.ico',
 
-  url: 'https://docs.becomy.com',
+  url: 'https://docs-becomy.netlify',
   baseUrl: '/',
   organizationName: 'becomy',
   projectName: 'docs-becomy',
