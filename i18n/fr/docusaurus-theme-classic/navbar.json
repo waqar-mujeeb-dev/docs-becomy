@@ -1,0 +1,18 @@
+{
+  "title": {
+    "message": "ecomy",
+    "description": "Le titre dans la barre de navigation"
+  },
+  "logo.alt": {
+    "message": "Logo Becomy",
+    "description": "Le texte alternatif du logo de la barre de navigation"
+  },
+  "item.label.Tutorial": {
+    "message": "Tutoriel",
+    "description": "Élément de la barre de navigation avec l'étiquette Tutoriel"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Élément de la barre de navigation avec l'étiquette GitHub"
+  }
+}
