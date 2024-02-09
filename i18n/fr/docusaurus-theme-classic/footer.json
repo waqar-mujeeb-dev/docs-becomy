@@ -1,0 +1,30 @@
+{
+  "link.title.Community": {
+    "message": "Communauté",
+    "description": "Le titre de la colonne de liens dans le pied de page avec title=Communauté dans le pied de page"
+  },
+  "link.title.More": {
+    "message": "Plus",
+    "description": "Le titre de la colonne de liens dans le pied de page avec title=Plus dans le pied de page"
+  },
+  "link.item.label.Stack Overflow": {
+    "message": "Stack Overflow",
+    "description": "L'étiquette du lien dans le pied de page avec label=Stack Overflow qui pointe vers https://stackoverflow.com/questions/tagged/docusaurus"
+  },
+  "link.item.label.Discord": {
+    "message": "Discord",
+    "description": "L'étiquette du lien dans le pied de page avec label=Discord qui pointe vers https://discordapp.com/invite/docusaurus"
+  },
+  "link.item.label.Twitter": {
+    "message": "Twitter",
+    "description": "L'étiquette du lien dans le pied de page avec label=Twitter qui pointe vers https://twitter.com/docusaurus"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "L'étiquette du lien dans le pied de page avec label=GitHub qui pointe vers https://github.com/facebook/docusaurus"
+  },
+  "copyright": {
+    "message": "Droits d'auteur © 2024 Mon Projet, Inc. Construit avec Docusaurus.",
+    "description": "Le droit d'auteur dans le pied de page"
+  }
+}

@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[[redirects]]
+  from = "/fr/*"
+  to = "https://docs-becomy/fr.netlify.app/:splat"
+  status = 200
+  force = true

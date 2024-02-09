@@ -1,0 +1,10 @@
+{
+  "version.label": {
+    "message": "Suivant",
+    "description": "L'étiquette pour la version actuelle"
+  },
+  "sidebar.tutorialSidebar.category.Getting Started": {
+    "message": "Démarrage",
+    "description": "L'étiquette pour la catégorie Getting Started dans la barre latérale tutorialSidebar"
+  }
+}
