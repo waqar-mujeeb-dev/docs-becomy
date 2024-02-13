@@ -1,3 +1,7 @@
+---
+title: 'Pricing Plans'
+slug: 'pricing-plans'
+---
 Becomy presents competitive rates with transparent [pricing plans <Icon icon="fa-solid fa-arrow-up-right-from-square" />](https://becomystaging.com/pricing), ensuring no hidden charges or sudden increases as your store grows. Take advantage of a free plan and explore how Becomy's features can elevate your business. Upgrade anytime for additional features and enhanced functionality.
 
 ## Plan Features

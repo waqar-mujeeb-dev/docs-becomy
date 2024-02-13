@@ -1,6 +1,6 @@
 ---
-title : Inscription
-description : Démarrage avec Becomy
+title : 'Inscription'
+description : 'Démarrage avec Becomy'
 order : 2
 ---
 
