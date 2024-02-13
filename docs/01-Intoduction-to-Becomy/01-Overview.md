@@ -1,3 +1,7 @@
+---
+title: 'Overview'
+---
+
 Learn about Pricing plans, easy inventory control, safe payments, and boost sales with affiliate marketing for a successful online store. Your path to success begins now.
 
 
