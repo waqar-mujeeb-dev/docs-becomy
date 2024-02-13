@@ -12,11 +12,10 @@ const config = {
   tagline: 'Versatile Ecommerce Solution',
   favicon: 'img/favicon.ico',
 
-  url: 'https://docs-becomy.netlify',
+  url: 'https://docs-becomy.netlify.app',
   baseUrl: '/',
   organizationName: 'becomy',
   projectName: 'docs-becomy',
-  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -65,28 +64,9 @@ const config = {
             label: 'Tutorial',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
-          {
             type: 'localeDropdown',
             position: 'right',
-          },
-          // {
-          //   label: 'Community',
-          //   position: 'left', // or 'right'
-          //   items: [
-          //     {
-          //       label: 'Facebook',
-          //       href: '...',
-          //     },
-          //     {
-          //       label: 'GitHub',
-          //       href: '...',
-          //     },
-          //   ]
-          // }          
+          },      
         ],
       },
       footer: {
@@ -125,6 +105,7 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      trailingTrash: true
     }),
   
   i18n: {
