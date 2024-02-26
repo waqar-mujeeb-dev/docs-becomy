@@ -1,6 +1,5 @@
 ---
 title: 'Pricing Plans'
-slug: 'pricing-plans'
 ---
 Becomy presents competitive rates with transparent [pricing plans <Icon icon="fa-solid fa-arrow-up-right-from-square" />](https://becomystaging.com/pricing), ensuring no hidden charges or sudden increases as your store grows. Take advantage of a free plan and explore how Becomy's features can elevate your business. Upgrade anytime for additional features and enhanced functionality.
 
@@ -35,3 +34,14 @@ Make sure to Save your _**store name**_ somewhere safe.
 
 
 ### Maximize Your Becomy Free Trial Experience!
+
+Becomy provides a range of powerful features to help you establish and manage your online store. Your free trial period is an opportunity to explore these features and understand how they can enhance your product offerings and business growth.
+
+Here are some key steps to make the most of your Becomy free trial:
+
+- [Add Products](#) and their details to ensure they are displayed correctly on your online store.
+- [Add collections](#) to organize your products, improve navigation and enhance the shopping experience for your customers.
+- [Payment Setup](#) Set up Becomy Payments or verify that your preferred third-party payment provider is compatible with Becomy.
+- [Make yourself familiar with the Settings section](#) in your Becomy admin to configure taxes, shipping options, and other essential settings.
+- [Explore Themes](#) to discover themes and apps that can customize and enhance the functionality of your store.
+
