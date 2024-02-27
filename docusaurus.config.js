@@ -4,7 +4,7 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -18,8 +18,9 @@ const config = {
   projectName: 'docs-becomy',
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  trailingSlash: true, 
+  onBrokenMarkdownLinks: 'throw',
+  onBrokenAnchors: 'throw',
+  trailingSlash: true,
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -61,12 +62,13 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Topics',
           },
+
           {
             type: 'localeDropdown',
             position: 'right',
-          },      
+          },
         ],
       },
       footer: {
@@ -107,15 +109,15 @@ const config = {
       },
       trailingTrash: true
     }),
-  
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'fr'],
     localeConfigs: {
-      en:{
+      en: {
         label: 'English'
       },
-      fr:{
+      fr: {
         label: 'Français'
       }
     }

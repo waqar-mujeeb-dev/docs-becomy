@@ -1,5 +1,6 @@
 ---
 title: 'Aperçu'
+slug: /
 ---
 Découvrez les plans tarifaires, le contrôle facile des stocks, les paiements sécurisés et boostez vos ventes grâce au marketing d'affiliation pour une boutique en ligne réussie. Votre chemin vers le succès commence maintenant.
 
