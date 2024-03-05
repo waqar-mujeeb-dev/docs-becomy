@@ -12,7 +12,7 @@ const config = {
   tagline: 'Versatile Ecommerce Solution',
   favicon: 'img/favicon.ico',
 
-  url: 'https://docs-becomy.netlify.app',
+  url: 'https://docs-becomy.surge.sh',
   baseUrl: '/',
   organizationName: 'becomy',
   projectName: 'docs-becomy',
@@ -50,7 +50,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/becomy-thumbnail.png',
       navbar: {
         title: 'ecomy',
         logo: {
@@ -107,8 +107,92 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
-      trailingTrash: true
+      trailingTrash: true,
+      metadata: [
+        { name: 'Tags', content: 'Becomy, ecommerce, documentation, guide, tutorial' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:image', content: 'img/becomy-thumbnail.png' },
+        { name: 'twitter:site', content: '@Becomy' },
+        { name: 'twitter:creator', content: '@BecomySupport' },
+        { property: 'og:image', content: 'img/becomy-thumbnail.png' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:site_name', content: 'Becomy Official Documentation' },
+      ],
+      headTags: [
+        // Declare a <link> preconnect tag
+        {
+          tagName: 'link',
+          attributes: {
+            rel: 'preconnect',
+            href: 'https://example.com',
+          },
+        },
+        // Declare some json-ld structured data
+        {
+          tagName: 'script',
+          attributes: {
+            type: 'application/ld+json',
+          },
+          innerHTML: JSON.stringify({
+            '@context': 'https://schema.org/',
+            '@type': 'Organization',
+            name: 'Becomy',
+            url: 'https://becomystaging.com/',
+            logo: 'https://becomystaging.com/path-to-your-logo.png',
+          }),
+        },
+        // Additional tags for Twitter Card
+        {
+          tagName: 'meta',
+          attributes: {
+            name: 'twitter:title',
+            content: 'Getting Started with Becomy: A Comprehensive Documentation',
+          },
+        },
+        {
+          tagName: 'meta',
+          attributes: {
+            name: 'twitter:description',
+            content: 'Explore Becomy effortlessly with our user-friendly docs and videos. Get answers to your questions and enhance your ecommerce journey. Start now!',
+          },
+        },
+        {
+          tagName: 'meta',
+          attributes: {
+            name: 'twitter:image',
+            content: '/static/img/becomy-thumbnail.png',
+          },
+        },
+        {
+          tagName: 'meta',
+          attributes: {
+            name: 'twitter:url',
+            content: 'https://docs-becomy.surge.sh/',
+          },
+        },
+      ],
     }),
+
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          // /docs/oldDoc -> /docs/newDoc
+          // {
+          //   to: '/',
+          //   from: '/Intoduction-to-Becomy',
+          // },
+          // Redirect from multiple old paths to the new path
+          {
+            to: '/',
+            from: ['/Intoduction-to-Becomy', '/Products'],
+          },
+        ],
+      },
+    ],
+    
+  ],
 
   i18n: {
     defaultLocale: 'en',
