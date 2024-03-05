@@ -1,6 +1,7 @@
 ---
 title: Overview
 custom_edit_url: null
+slug: /introduction-to-becomy/overview
 Tags:
   - Online store
   - Becomy
@@ -11,8 +12,8 @@ description: Learn about Becomy's key features, ways to sell, our reliability, p
 <head>
 <meta property="twitter:description" content="Learn about BecomY's key features, ways to sell, our reliability, pricing plans, and where to find help."/>
 <meta property="og:url" content="https://docs-becomy.surge.sh/"/>
-<link rel="canonical" href="https://docs-becomy.surge.sh/"/>
-<link rel="alternate" href="https://docs-becomy.surge.sh/fr" hreflang="fr"/>
+<link rel="canonical" href="https://docs-becomy.surge.sh/introduction-to-becom"/>
+<link rel="alternate" href="https://docs-becomy.surge.sh/introcution-to-becomy/fr" hreflang="fr"/>
 </head>
 
 - Learn about Pricing plans, easy inventory control, safe payments, and boost sales with affiliate marketing for a successful online store. Your path to success begins now.

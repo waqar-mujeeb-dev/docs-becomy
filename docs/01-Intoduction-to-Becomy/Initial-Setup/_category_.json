@@ -6,9 +6,9 @@
   "className": "hidden",
   "link": {
     "type": "generated-index",
-    "title": "Initial Setup"
-  },
-  "customProps": {
-    "description": "This description can be used in the swizzled DocCard"
+    "title": "Initial Setup",
+    "slug": "/introduction-to-becomy/initial-setup",
+    "description": "Learn about Becomy's key features, ways to sell, our reliability, pricing plans, and where to find help",
+    "keywords": ["guides"]
   }
 }

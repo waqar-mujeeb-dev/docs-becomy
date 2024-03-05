@@ -1,6 +1,7 @@
 ---
 title: Pricing Plans
 custom_edit_url: null
+slug: /introduction-to-becomy/pricing-plans
 Tags:
   - Pricing plans
   - Becomy pricing
@@ -11,25 +12,11 @@ description: Explore the features each Becomy pricing plan offers. Find the perf
 ---
 
 
-<!-- <meta property="og:description" content="Explore the features each Becomy pricing plan offers. Find the perfect plan to suit your ecommerce needs."/>
-<meta property="og:image" content="https://docs-becomy.surge.sh/img/becomy-thumbnail.png"/>
-<meta property="og:title" content="Pricing plans | Becomy"/>
-<meta property="twitter:card" content="summary"/>
-<meta property="twitter:creator" content="@BecomySupport"/>
-<meta property="twitter:description" content="Explore the features each BecomY pricing plan offers. Find the perfect plan to suit your ecommerce needs."/>
-<meta property="twitter:image" content="https://docs-becomy.surge.sh/img/becomy-thumbnail.png"/>
-<meta property="twitter:title" content="Pricing plans | Becomy"/>
-<meta property="og:site_name" content="Becomy Official Documentation"/>
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="https://docs-becomy.surge.sh/Intoduction-to-Becomy/Pricing-Plans/"/>
-<meta property="twitter:site" content="@Becomy"/> -->
-
-
 <head>
 <meta property="twitter:description" content="Explore the features each Becomy pricing plan offers. Find the perfect plan to suit your ecommerce needs."/>
-<meta property="og:url" content="https://docs-becomy.surge.sh/Intoduction-to-Becomy/Pricing-Plans/"/>
-<link rel="canonical" href="https://docs-becomy.surge.sh/"/>
-<link rel="alternate" href="https://docs-becomy.surge.sh/fr" hreflang="fr"/>
+<meta property="og:url" content="https://docs-becomy.surge.sh/intoduction-to-becomy/pricing-plans/"/>
+<link rel="canonical" href="https://docs-becomy.surge.sh/intoduction-to-becomy"/>
+<link rel="alternate" href="https://docs-becomy.surge.sh/intoduction-to-becomy/fr" hreflang="fr"/>
 </head>
 
 Becomy presents competitive rates with transparent [pricing plans <Icon icon="fa-solid fa-arrow-up-right-from-square" />](https://becomystaging.com/pricing), ensuring no hidden charges or sudden increases as your store grows. Take advantage of a free plan and explore how Becomy's features can elevate your business. Upgrade anytime for additional features and enhanced functionality.
