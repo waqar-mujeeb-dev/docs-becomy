@@ -33,6 +33,9 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
+          rehypePlugins: [
+
+          ],
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -52,11 +55,11 @@ const config = {
       // Replace with your project's social card
       image: 'img/becomy-thumbnail.png',
       navbar: {
-        title: 'ecomy',
-        logo: {
-          alt: 'Becomy Logo',
-          src: 'img/b-logo.svg',
-        },
+        title: 'Becomy.',
+        // logo: {
+        //   alt: 'Becomy Logo',
+        //   src: 'img/b-logo.svg',
+        // },
         items: [
           {
             type: 'docSidebar',
@@ -174,24 +177,19 @@ const config = {
     }),
 
   plugins: [
-    [
-      '@docusaurus/plugin-client-redirects',
-      {
-        redirects: [
-          // /docs/oldDoc -> /docs/newDoc
-          // {
-          //   to: '/',
-          //   from: '/Intoduction-to-Becomy',
-          // },
-          // Redirect from multiple old paths to the new path
-          {
-            to: '/',
-            from: ['/Intoduction-to-Becomy', '/Products'],
-          },
-        ],
-      },
-    ],
-    
+    async function myPlugin(context, options) {
+      return {
+        name: "docusaurus-tailwindcss",
+        configurePostCss(postcssOptions) {
+          // Appends TailwindCSS and AutoPrefixer.
+          postcssOptions.plugins.push(require("tailwindcss"));
+          postcssOptions.plugins.push(require("autoprefixer"));
+          return postcssOptions;
+        },
+      };
+    },
+
+
   ],
 
   i18n: {
