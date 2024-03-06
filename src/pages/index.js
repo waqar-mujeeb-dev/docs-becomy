@@ -7,24 +7,91 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import  Head  from '@docusaurus/Head';
+import metaThumbnail from '@site/static/img/becomy-thumbnail.png';
+
+const MetaData = ({
+  title,
+  description,
+  // Optional props for OG tags and TC tags
+  imageUrl,
+  siteName,
+  twitterSite,
+  twitterCreator,
+}) => {
+  const ogUrl = `https://docs-becomy.surge.sh/`; // Update URL as needed
+
+  return (
+    <Head>
+      {/* Title and Description (already included) */}
+
+      {/* OG Tags */}
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:url" content={ogUrl} />
+      {imageUrl && <meta property="og:image" content={imageUrl} />}
+      {siteName && <meta property="og:site_name" content={siteName} />}
+
+      {/* Twitter Cards */}
+      <meta property="twitter:title" content={title} />
+      <meta property="twitter:description" content={description} />
+      {twitterSite && <meta name="twitter:site" content={twitterSite} />}
+      {twitterCreator && <meta name="twitter:creator" content={twitterCreator} />}
+      {imageUrl && <meta name="twitter:card" content="summary_large_image" />}
+      {imageUrl && <meta name="twitter:image" content={imageUrl} />}
+
+      {/* Optional Schema Markup (replace with your specific schema) */}
+      {/*
+        <script type="application/ld+json">
+          {`{
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "${title}",
+            "description": "${description}",
+            "image": "${imageUrl}",
+            // Add other relevant schema properties
+          }`}
+        </script>
+      */}
+
+      {/* Keywords (already included) */}
+      {/* {keywords && (
+        <meta name="keywords" content={keywords.join(', ')} />
+      )} */}
+    </Head>
+  );
+};
+
+
+
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/introduction-to-becomy">
-            Get Started
-          </Link>
+    <>
+      <MetaData 
+        description={"Get expert guidance on becomy at our comprehensive help center. Access informative guides and videos to enhance your understanding of becomy."}
+        imageUrl={metaThumbnail}
+        siteName={"Becomy Help Center"}
+        title={"Becomy Help Center"}
+        twitterCreator={"@BecomySupport"}
+        twitterSite={"@Becomy"} 
+        />
+      <header className={clsx('hero hero--primary', styles.heroBanner)}>
+        <div className="container">
+          <Heading as="h1" className="hero__title">
+            {siteConfig.title}
+          </Heading>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <div className={styles.buttons}>
+            <Link
+              className="button button--secondary button--lg"
+              to="/introduction-to-becomy">
+              Get Started
+            </Link>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </>
   );
 }
 

@@ -8,7 +8,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Becomy',
+  title: 'Becomy Help Center',
   tagline: 'Versatile Ecommerce Solution',
   favicon: 'img/favicon.ico',
 
@@ -119,7 +119,7 @@ const config = {
         { name: 'twitter:creator', content: '@BecomySupport' },
         { property: 'og:image', content: 'img/becomy-thumbnail.png' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:site_name', content: 'Becomy Official Documentation' },
+        { property: 'og:site_name', content: 'Becomy Help Center' },
       ],
       headTags: [
         // Declare a <link> preconnect tag
