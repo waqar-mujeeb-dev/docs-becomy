@@ -1,6 +1,8 @@
 ---
 title: Product details
 hide_title: true
+toc_min_heading_level: 2
+toc_max_heading_level: 5
 slug: /products/details
 Tags: 
   - variants
@@ -23,11 +25,9 @@ description: Get insights into title, description, product media, and variants m
 
 ## Guide to Product Details
 
-The information you share about your products directly impacts how they appear to your customers, making it easy for you to manage your products, 
-and assiting the customers to find the desired product. You don't have to give every detail of your product.
-To create a product you need to specify the relevant details such as title, description and upload product images. Additionally, you can add details that help your clients to
-easily understand product. Add Price, Variants if any, weight and shipping details.  
-To update images for product variants, go to the variant section on the product page. After creating the product, navigate to the specific product page from the product list and update the variant images there. 
+You can easily manage your products and help customers find what they're looking for by sharing information about them that directly affects how they appear to them. You do not have to provide every detail about your product.
+To create a product, you must provide the necessary information such as the title, description, and submit product photos. You must include information that makes your product easier for your customers to understand. Add the price, any variations, weight, and shipping information.  
+To update photos for product variants, navigate to the variant section of the product page. After creating the product, go to the relevant product page in the product list and update the variant images. 
 This allows for easy customization and management of variant images, ensuring each variant has a distinct visual representation.
 
 ![Becomy Product Page](../../static/img/becomy-product-dashboard.png)
@@ -43,7 +43,7 @@ Description section uses the [rich text editor](#), so you can easily use bullet
 
 :::tip
 
-Avoid using manufacturer's exact descriptions for uniqueness in search engines.
+Avoid using manufacturer's exact descriptions for uniqueness in search engines. Visit [Rich text Editory](#) from more details.
 
 :::
 
@@ -54,29 +54,91 @@ Include images, 3D models, and videos to showcase your product. Refer to [Produc
 
 ### Pricing
 
-- **Price**: Set the product price in your store's currency.
-- **Compare-at Price**: Original price for a product on sale.
-- **Cost per Item**: Optional field for production cost. Displays projected margin.
+You can setup prices for product variations and individual products. Establishing prices for products involves calculating production costs,
+adding desired profits, and considering market demand. Competitive analysis ensures pricing aligns with industry standards, while strategic discounts and 
+bundling options can enhance sales and customer appeal.
 
-*Note*: Changes in pricing can impact reports. Refer to [Product Pricing](https://becomystaging.com/pricing) for more details.
+
+- **Price**: Set the product price in your store's currency.
+- **Compare-at Price**: It is the actual or original price product is sold for.
+To set the **Compare at Price** for the product    
+    1. From you Becomy Admin, go to **Catalog -> Products** 
+    2. View the Product you want to set **Compare at Price for**.
+    3. Scroll to the Pricing Section.
+    4. Set the price in the **Compare at Price** input field. The value must be higher than the value in the **Pricing** field.
+      
+      ![](../../static/img/compare-at-price.png)
+    
+    5. Save the changes. 
+- **Cost per Item**: Optional field for production cost. Displays projected margin.
+      
+      ![](../../static/img/cost-per-item.png)
+
+
 
 ### Inventory
+Inventory is the amount of products available for sale
 
-- **SKU (Stock Keeping Unit)**: Unique code for product identification.
-- **Barcode (ISBN, UPC, GTIN)**: Barcodes for effective tracking and sales reporting.
-- **Available**: Units in stock.
-- **Incoming**: Number of incoming units.
-- **Committed**: Units part of an order but not yet fulfilled.
+It is crucial to keep track of your products in your inventory so that you don't sell more than you actually have. It helps
+you to remind to restore your stock before it runs out, and also shows the available products to your customers.
 
-*Tip*: Utilize bulk editor or CSV import for efficient updates. Gift card products exempt from Cost per Item.
+#### SKU
+SKU (Stock Keeping Unit) a code for product identification within your business. For effective tracking of products, each sku needs to be matchless.
+It's either your own mix of letters or numbers or is provided by manugfacturer. SKU field is optional, if it's empty product won't be having any SKU, but if you add SKU then it must be unique.
+
+:::info
+If you want to sell product with multiple variations, you can add SKUs for each variation
+:::
+
+#### Barcode 
+Barcode (GTIN, ISBN, UPC ) is a special codes to show information about products. This code helps, quickly identifying and tracking products, making inventory management easy.  
+It could be new or exsiting global trade item number, which are used globally to identify products. Depending on the product GTIN, ISBN and UPC can vary in length.
+Please, do not write false barcode for your products.
+
+If you don't have barcode for the product, then you can get it from manufacturer. Identify how to get GTIN of your product from manufacturer at [GS1 Standard Website <Icon icon="fa-solid fa-arrow-up-right-from-square" />](https://www.gs1.org/standards/barcodes)
+:::info
+  You can add Barcode for each variation of product separatly
+:::
+
+#### Warehouse Location and Availablility
+  The **Available** field indicates the quantity of a product in your stock. Specify the available quantity of products while creating the product.
+  If you are selling variations of same product then you can declare quantity available for each variation. 
+
+  Also, if your stock in in different places, add the locations in **Warehouse Location** field and how many items are in each place.
+  
+  ![](../../static/img/product-warehouse-locations.png)
+
+:::info
+To add new warehouse locations go to [**Inventory -> Warehouses** <Icon icon="fa-solid fa-arrow-up-right-from-square" /> ](https://becomystaging.com/admin/resources/warehouses)
+:::
+
 
 ### Shipping
 
-- **This Product Requires Shipping**: Select for physical products.
-- **Weight**: Exact product weight for shipping rate calculation.
-- **Add Customs Information**: Save information for international shipping.
+  The Shipping & Pickup section on Becomy helps you set up how your physical products will reach your customers.  This includes marking products as shippable, setting specific shipping methods, and specifying their weight and dimensions.
+  
+  **Enable Shipping**  option lets you indicate whether the product needs to be physically delivered to customers. If the product is a service or a downloadable item, you can leave this option disabled.
+  
+  ![](../../static/img/enable-shipping.png)
 
-*Note*: Accurate weight is crucial for shipping rates. Customs information required for international shipping. [Learn More](#)
+  By enabling this toggle on button, you'll see some additional options to configure shipping for the specific product. 
+  **Weights and Dimensions -**
+  Provide the weight and dimensions of your product for accurate shipping costs. This information is used to calculate shipping costs for your customers. You can also change the unit system based on your preference.
+:::tip
+  Adding accurate weight and dimensions to your products helps Becomy calculate accurate shipping costs for your customers.
+:::
+  **Shipping Rates -**
+  Becomy offers you various ways to set up your shipping rates. Use any of the below mentioned option to set product shipment rates.
+
+  ![](../../static/img/shipping-rates.png)
+
+   1. **Fixed price per item:** This option is suitable if the product requires individual shipping charges regardless of the quantity ordered by the customer. 
+   2. **Use personalized delivery methods:**  This option allows you to define shipping costs based on your store's shipping settings. You can also add a flat fee per item on top of the calculated shipping costs.
+   3. **Indicate delivery method**: This option gives you the most control over shipping information. You can define specific delivery methods (e.g., standard shipping, expedited shipping) and set their corresponding costs directly within Becomy. This allows you to clearly display the available delivery options to your customers during checkout
+   4. **Free delivery:** This option lets you offer free shipping to your customers, regardless of the quantity of items they order.
+:::tip
+  Offering free shipping can encourage customers to buy more and increase your sales.
+:::
 
 ### Category
 
@@ -85,9 +147,10 @@ Include images, 3D models, and videos to showcase your product. Refer to [Produc
 
 *Early Access*: New product taxonomy and category metafields in early access. Apply through the [Winter '24 Edition](#).
 
-### Variants
+### Variants 
 
-Explore product options like color and size. Refer to [Variants](#) for detailed information.
+If your product comes with different options such as colors and size, in variants section you can declare these options. For more information read [variants](/docs/03-Products/03-Variants.mdx)
+
 
 ### Purchase Options
 
@@ -95,7 +158,17 @@ Add purchase options like subscriptions, try-before-you-buy, and preorders. Lear
 
 ### Search Engine Listing
 
-Preview how your product will display in search engine results. Click 'Edit' in the Search engine listing section for changes.
+Preview how your product will display in search engine results. You can set the product SEO related details in this section, including the custom URL. The custom URL feature allows you to define a specific URL for your product that is easy to remember and includes relevant keywords.
+
+Here's a breakdown of the SEO section and how it can help your product rank higher in search engines:
+
+![](../../static/img/seo-section.png)
+* **Meta Title:** Keep it short and catchy, with keywords describing what you sell. This will be the link shown in the search results.
+* **Meta Description:** Mention key features and benefits of your product, using those same keywords.  It can be of any length, but Google usually shows around 155-160 characters.
+
+By editing these descriptions, you can provide search engines and users with more information about your product, which can help you rank higher in search results.
+
+{/* 
 
 ### Product Status
 
@@ -126,4 +199,4 @@ Add custom fields with metafields for specialized information. Connect metafield
 
 *Note*: Online Store 2.0 themes, such as Dawn, support metafields. Edit theme code or hire a Becomy Partner for other themes.
 
-This comprehensive guide covers all the necessary details for creating and managing products on the Becomy SAAS Ecommerce platform. For additional support, refer to related topics or contact our customer service.
+This comprehensive guide covers all the necessary details for creating and managing products on the Becomy SAAS Ecommerce platform. For additional support, refer to related topics or contact our customer service. */}
