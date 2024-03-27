@@ -1,0 +1,13 @@
+{
+  "label": "Design",
+  "collapsible": true,
+  "collapsed": false,
+  "className": "hidden",
+  "link": {
+    "type": "generated-index",
+    "title": "Design",
+    "slug": "/design",
+    "description": "Handle everything with ease: create collections, manage inventory, and upload variants seamlessly.",
+    "keywords": ["products, inventory, collections, shipping, pricing"]
+  }
+}
