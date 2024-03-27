@@ -1,4 +1,12 @@
 {
+  "theme.website.title": {
+    "message": "Becomy centre d'aide.",
+    "description": "The title of the website for landing page"
+  },
+  "theme.becomy.tagline": {
+    "message": "Solution de commerce électronique polyvalente",
+    "description": "The website tagline to show on landing page"
+  },
   "theme.ErrorPageContent.title": {
     "message": "Cette page a planté.",
     "description": "The title of the fallback page when the page crashed"
@@ -285,5 +293,69 @@
   "theme.unlistedContent.message": {
     "message": "Cette page n'est pas répertoriée. Les moteurs de recherche ne l'indexeront pas, et seuls les utilisateurs ayant un lien direct peuvent y accéder.",
     "description": "The unlisted content banner message"
+  },
+  "theme.visit.button": {
+    "message": "Visite", 
+    "description": "Visit Button french"
+  },
+  "homepage.start.title":{
+    "message": "Commencer", 
+    "description": "The start section title on homepage"
+  },
+  "homepage.start.intro.title": {
+    "message": "Introduction à Becomy", 
+    "description": "Intro to becomy homepage title"
+  },
+  "homepage.start.intro.desc": {
+    "message": "Découvrez les principales fonctionnalités de Becomy, nos méthodes de vente, notre fiabilité, nos plans tarifaires et où trouver de l'aide.", 
+    "description": "Intro to becomy route description"
+  },
+  "homepage.start.account.title": {
+    "message": "Votre compte", 
+    "description": "Your account homepage title"
+  },
+  "homepage.start.account.desc": {
+    "message": "Comprendre comment configurer et gérer votre compte Becomy pour une expérience de vente optimale", 
+    "description": "Your account route description"
+  },
+  "homepage.manage.title":{
+    "message": "Gérer", 
+    "description": "The manage section title on homepage"
+  },
+  "homepage.manage.products.title":{
+    "message": "Des produits", 
+    "description": "The products route title on homepage"
+  },
+  "homepage.manage.products.desc":{
+    "message": "Des produits", 
+    "description": "The products route title on homepage"
+  },
+  "homepage.manage.payments.title":{
+    "message": "Paiements", 
+    "description": "The payments route title on homepage"
+  },
+  "homepage.manage.payments.desc":{
+    "message": "Paiements", 
+    "description": "The payments route title on homepage"
+  },
+  "homepage.manage.orders.title":{
+    "message": "Ordres", 
+    "description": "The orders route title on homepage"
+  },
+  "homepage.manage.orders.desc":{
+    "message": "Ordres", 
+    "description": "The orders route title on homepage"
+  },
+  "homepage.manage.shipping.title":{
+    "message": "Expédition", 
+    "description": "The shipping route title on homepage"
+  },
+  "homepage.manage.shipping.desc":{
+    "message": "expédition", 
+    "description": "The shipping route title on homepage"
+  },
+  "homepage.getstarted.button": {
+    "message": "Commencez Maintenant",
+    "description": "Get started button"
   }
 }

@@ -1,6 +1,13 @@
 {
   "position": 1,
-  "label": "Introduction au Becomy",
+  "label": "Introduction à Becomy",
   "collapsible": true,
+  "link": {
+    "type": "generated-index",
+    "title": "Introduction à Becomy",
+    "slug": "/introduction-to-becomy",
+    "description": "Découvrez les fonctionnalités clés de Becomy, les moyens de vendre, notre fiabilité, les plans tarifaires, et où trouver de l'aide",
+    "keywords": ["guides"]
+  },
   "collapsed": false
 }

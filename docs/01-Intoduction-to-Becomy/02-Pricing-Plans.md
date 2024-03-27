@@ -1,6 +1,24 @@
 ---
-title: 'Pricing Plans'
+title: Pricing Plans
+custom_edit_url: null
+slug: /introduction-to-becomy/pricing-plans
+Tags:
+  - Pricing plans
+  - Becomy pricing
+  - Transparent pricing
+  - Competitive rates
+  - Free trial
+description: Explore the features each Becomy pricing plan offers. Find the perfect plan to suit your ecommerce needs
 ---
+
+
+<head>
+<meta property="twitter:description" content="Explore the features each Becomy pricing plan offers. Find the perfect plan to suit your ecommerce needs."/>
+<meta property="og:url" content="https://docs-becomy.surge.sh/intoduction-to-becomy/pricing-plans/"/>
+<link rel="canonical" href="https://docs-becomy.surge.sh/intoduction-to-becomy"/>
+<link rel="alternate" href="https://docs-becomy.surge.sh/intoduction-to-becomy/fr" hreflang="fr"/>
+</head>
+
 Becomy presents competitive rates with transparent [pricing plans <Icon icon="fa-solid fa-arrow-up-right-from-square" />](https://becomystaging.com/pricing), ensuring no hidden charges or sudden increases as your store grows. Take advantage of a free plan and explore how Becomy's features can elevate your business. Upgrade anytime for additional features and enhanced functionality.
 
 ## Plan Features
