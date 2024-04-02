@@ -1,6 +1,21 @@
 ---
-title: 'Plans tarifaires'
+title: Plans tarifaires
+custom_edit_url: null
+slug: /introduction-to-becomy/pricing-plans
+Tags:
+  - Plans tarifaires
+  - Tarification Becomy
+  - Tarification transparente
+  - Taux compétitifs
+  - Essai gratuit
+description: Explorez les fonctionnalités offertes par chaque plan tarifaire Becomy. Trouvez le plan parfait pour répondre à vos besoins en matière de commerce électronique.
 ---
+<head>
+<meta property="twitter:description" content="Explorez les fonctionnalités offertes par chaque plan tarifaire Becomy. Trouvez le plan parfait pour répondre à vos besoins en matière de commerce électronique."/>
+<meta property="og:url" content="https://docs-becomy.surge.sh/intoduction-to-becomy/pricing-plans/"/>
+<link rel="canonical" href="https://docs-becomy.surge.sh/intoduction-to-becomy"/>
+<link rel="alternate" href="https://docs-becomy.surge.sh/intoduction-to-becomy/fr" hreflang="fr"/>
+</head>
 
 Certainly! Here is the French translation of the provided text:
 

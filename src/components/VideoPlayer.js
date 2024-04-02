@@ -6,7 +6,7 @@ export const VideoPlayer = ({url}) => {
       <iframe 
         src={url} frameBorder="0" 
         style={{position:"absolute",width:"100%", height:"100%",borderRadius:"6px",left:"0",top:"0"}} 
-        allowfullscreen="">
+        allowFullScreen="">
       </iframe>
     </div>
   )

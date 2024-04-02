@@ -1,6 +1,13 @@
 {
   "position": 1,
-  "label": "Intorduction to Becomy",
+  "label": "Introduction to Becomy",
   "collapsible": true,
+  "link": {
+        "type": "generated-index",
+        "title": "Introduction to Becomy",
+        "slug": "/introduction-to-becomy",
+        "description": "Learn about Becomy's key features, ways to sell, our reliability, pricing plans, and where to find help",
+        "keywords": ["guides"]
+      },
   "collapsed": false
 }
