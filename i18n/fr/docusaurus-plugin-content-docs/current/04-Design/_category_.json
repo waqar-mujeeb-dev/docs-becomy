@@ -1,0 +1,13 @@
+{
+    "label": "Conception",
+    "collapsible": true,
+    "collapsed": false,
+    "className": "hidden",
+    "link": {
+      "type": "generated-index",
+      "title": "Conception",
+      "slug": "/design",
+      "description": "Gérez tout en toute simplicité : créez des collections, gérez l'inventaire et téléchargez des variantes en toute transparence.",
+      "keywords": ["produits, inventaire, collections, expédition, tarification"]
+    }
+  }
