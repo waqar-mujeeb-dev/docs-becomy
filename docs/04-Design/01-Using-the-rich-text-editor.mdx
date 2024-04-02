@@ -6,7 +6,13 @@ description: Discover the rich text editor to format and style your content, inc
 custom_edit_url: null
 toc_min_heading_level: 2
 toc_max_heading_level: 5
-Tags: [Rich Text Editor, Content Formatting, Text Styling, Images, HTML Markup, Videos]
+Keywords : 
+- Rich Text Editor 
+- Content Formatting 
+- Text Styling 
+- Images 
+- HTML Markup 
+- Videos
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -91,6 +97,22 @@ Adding an image in rich text editor is not a drag and drop process. You are requ
 :::
 
 ### Add Videos
+You can display your product by adding a URL for video. Just be sure to make your content helpful for customers.
+
+    <img className="docs-ss" src={useBaseUrl('/img/rte-insert-vid-btn.png')} />
+
+To add a video into your description box:
+
+1. Click on the video icon located in the rich text editor toolbar to initiate the video insertion process.
+2. A dialog box will appear, presenting you with two distinct options for adding your video content:
+    - **General**: Utilize this option to directly add a video via a URL. Simply paste the link to your video in the provided field. This is ideal for quickly sharing videos hosted on platforms like YouTube or Vimeo.
+
+        <img className="docs-ss" src={useBaseUrl('/img/rte-insert-media-general.png')} />
+    - **Embed**: Choose this option if you have an embed code for your video. Embed codes are typically provided by video hosting services and allow for more customization in how the video is displayed on your site.
+
+        <img className="docs-ss" src={useBaseUrl('/img/rte-insert-media-embed.png')} />
+
+3. After selecting your preferred method and configuring your video settings, click on the "Insert" button to embed the video into your rich text content.
 
 ### Create Lists
 This rich text editor allows you to create ordered and unordered lists. The first one uses numbers and the second one uses bullets.
