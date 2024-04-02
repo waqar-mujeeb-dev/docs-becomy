@@ -1,4 +1,14 @@
 {
   "label": "Produits",
-  "position": 2
+  "collapsible": true,
+  "collapsed": false,
+  "position": 2,
+  "className": "hidden",
+  "link": {
+    "type": "generated-index",
+    "title": "Produits",
+    "slug": "/products",
+    "description": "Gérez tout facilement : créez des collections, gérez l'inventaire et téléchargez des variantes en toute transparence.",
+    "keywords": ["produits, inventaire, collections, expédition, tarification"]
+  }
 }
