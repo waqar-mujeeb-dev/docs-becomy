@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Image = ({ src, alt, className, style }) => {
+const Image = ({ src, alt, className = '', style = {} }) => {
   return (
     <div className={className}>
       <img 
@@ -21,11 +21,5 @@ Image.propTypes = {
   style: PropTypes.object,
 };
 
-Image.defaultProps = {
-  className: '',
-  style: {},
-};
 
 export default Image;
-
-
