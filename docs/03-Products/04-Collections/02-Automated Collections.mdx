@@ -1,0 +1,194 @@
+---
+toc_min_heading_level: 2
+toc_max_heading_level: 4
+slug: /products/automated-collections
+Tags: 
+  - collections
+  - automated collections
+  - manual collections
+  - collection conditions 
+custom_edit_url: null
+description: Create collections to demonstrate your products into categories
+---
+import Image from '@site/src/components/Images/Image';
+import { Table } from '@site/src/components/DataTable';
+
+
+Automated collections are a powerful way to organize products without the need for manual updates. By setting specific conditions, products that meet these criteria are automatically added to the collection. This saves time and ensures that your collections are always up-to-date.
+
+For example, you can create an automated collection for "Summer Sale" by setting conditions such as product tags, price ranges, or inventory levels. Any product that matches these conditions will be included in the collection. This is particularly useful for seasonal promotions or special events where the product lineup may change frequently.
+
+To set up an automated collection, go to the Collections section in your Becomy admin and choose to create a new collection. Select the option for an automated collection and define the conditions that products must meet to be included. You can use various criteria such as product title, type, vendor, price, and more. Once the conditions are set, the system will automatically add any matching products to the collection.
+
+Automated collections not only save time but also help in maintaining consistency across your store. They ensure that new products are promptly added to relevant collections, enhancing the shopping experience for your customers. By using automated collections, you can focus more on other aspects of your business while ensuring that your product organization remains efficient and effective.
+
+#### Creating an Automated Collection
+
+Setting up an automated collection involves a few straightforward steps:
+
+1. From your admin dashboard, go to **Products > Collections**.
+   <Image 
+     className="flex justify-start items-center"
+     src="/img/collections/collections-sidenav.png" 
+     alt="Go to Products > Collections" 
+   />
+2. Click on **Create collection** and enter a title and description.
+   <Image 
+     className="flex justify-start items-center w-3/5"
+     src="/img/collections/title-description.png" 
+     alt="Create collection" 
+   />
+3. In the **Collection type** section, choose **Automatic**.
+   <Image 
+     className="flex justify-start items-center w-3/5"
+     src="/img/collections/automated.png" 
+     alt="Automatic Collection" 
+   />
+4. Set the conditions that products must meet to be included. You can use various criteria such as product title, type, vendor, price, and more.
+   <Image 
+     className="flex justify-start items-center w-3/5"
+     src="/img/collections/conditions-type.png" 
+     alt="Conditions type" 
+   />
+5. Click **Save**. The system will automatically add matching products. You can also set the sort order for how products are displayed.
+
+#### Adding Conditions
+
+When you create an automated collection, you can add one or more conditions to retrieve products that match those conditions. If you have already added conditions on collections, then you will also see those conditions in this section.
+
+1. In the **collection conditions** section, select the condition type.
+2. In the second dropdown, select how the product needs to match the condition. For example, for price you'll see **is equal**, **is less than**, **is greater than**, etc.
+3. In the third field, add the condition value.
+4. If you want to add more than one condition, click on **+ Add another condition** and repeat the above steps.
+5. Click **Save** to add the matching products into the collection.
+
+:::info
+Once a collection is created, its type (manual or automated) cannot be changed. If you need to switch the type, you will have to create a new collection with the desired type and set it up accordingly. This ensures that the organizational structure of your collections remains consistent and prevents accidental changes that could affect your product categorization.
+:::
+
+#### Adding Attachments to a Collection
+
+You can enhance your collections by adding multiple images as attachments. This feature allows you to upload various images that can be displayed in both thumbnail and carousel views, providing a richer visual experience for your customers.
+
+##### Steps to Add Attachments
+
+1. From your admin dashboard, go to **Products > Collections**.
+2. Click on the collection to which you want to add attachments.
+3. In the collection details page, find the **Attachments** section.
+   <Image 
+     className="flex justify-start items-center shadow-md"
+     src="/img/collections/attachments.png" 
+     alt="Go to Products > Collections" 
+   />
+
+4. Click on **Upload Images** to select and upload multiple images from your device.
+5. Once uploaded, you can preview the images in both thumbnail and carousel views.
+   <Image 
+     className="flex justify-start items-center w-3/5 shadow-md"
+     src="/img/collections/attachment-thubmnail.png" 
+     alt="Thumbnail View" 
+   />
+   <Image 
+     className="flex justify-start items-center w-3/5 shadow-md"
+     src="/img/collections/attachment-carousel.png" 
+     alt="Carousel View" 
+   />
+
+6. Click **Save** to add the images to the collection.
+
+Adding multiple images to your collections helps in showcasing your products more effectively, making it easier for customers to browse and make informed decisions. The thumbnail view provides a quick overview, while the carousel view allows for a detailed look at each image.
+
+:::info
+Ensure that the images you upload are of high quality and relevant to the collection. This will enhance the visual appeal and provide a better shopping experience for your customers.
+:::
+
+
+
+#### Update Automated Collections
+
+You can update the automated collections by editing the specific collection or by editing the product in the collection so it doesn't match the condition.
+
+1. From your Becomy admin, go to **Products -> Collections**.
+2. Click on the collection you want to update.
+3. Make any changes in the conditions, attachments, title, or description of the collection.
+4. Click **Save** to update the collections to reflect the latest changes.
+
+#### Replace the Automated Collection with Manual Collection
+
+You cannot change a manual collection to an automated collection or vice versa. But you can create a new manual collection to replace the existing automated collection.
+
+#### Delete Collection
+
+1. From your Becomy admin, navigate to **Products -> Collections**.
+2. In the collections list, find the collection you want to delete.
+3. Click the **Delete** button on the collection.
+4. A confirmation dialog will appear. Click **Confirm** to permanently delete the collection.
+
+:::danger
+Deleting a collection is a permanent action and cannot be undone. Ensure that you really want to delete the collection before confirming.
+:::
+
+## Guidelines for Automated Collection Conditions
+
+Conditions for automated collections allow you to dynamically group products based on specific criteria, ensuring that your collections are always up-to-date. 
+Users can add various conditions such as product tags, price ranges, inventory levels, and more. By setting these conditions, products that meet the specified criteria will automatically 
+be included in the collection.
+
+
+Titles and Tags
+Set conditions based on product title, variant title, type, or vendor
+Set conditions based on product tags
+
+
+
+### Set conditions based on product or variant title, type, or vendor
+
+You can setup conditions  based on product's title, variant's title, type, or vendor. You can select the option from operator dropdown list to specify how a 
+product needs to be matched with the condition field value that you enter into the third condition field value. The value that you enter in the condition field is 
+used to filter out the products, and matching products are shown in the collection. The condition field value is not case sensitive.
+
+Select the following options to render specific products based on the condition value you enter.
+This will help you filter and display products that meet your criteria.
+
+<Table
+  headers={["Term", "Description"]}
+  rows={[
+		["contains", "Product title, category, variant title, product meta title, meta keywords, and product vendor contains the value you enter. For now, you can enter at least one character and the values you enter can't have start or end spaces."],
+		["starts with", "The value starts with the specified characters."],
+		["ends with", "The value ends with the specified characters."],
+		["is not", "The value does not match the specified characters."],
+		["is equal to", "The value matches the value you enter exactly."]
+	]}
+/>
+
+
+### Set conditions based on product price, discount, available stock and vat
+
+Users can add conditions for price, available stock, discount, and VAT to dynamically filter products. Conditions like "less than" and "greater than" allow users to specify numeric thresholds, ensuring only products that fall below or exceed these values are included.
+
+<Table
+  headers={["Term", "Description"]}
+  rows={[
+		["is equal", "The value matches the value you enter exactly."],
+		["is not equal", "The value doesn't matches the value you enter exactly"],
+		["is greater than", "The product is greater than the value."],
+		["is less than", "The product is less than the value."],
+	]}
+/>
+
+- Select **Product Price** from the field/status dropdown.
+- From the operator dropdown, select **greater than**.
+- In the condition value field, enter the desired price (e.g., **50**).
+
+
+### Using Multiple Selection Conditions
+
+You can refine your collections by setting multiple selection conditions. This allows you to control which products are included based on various criteria. You have the flexibility to decide whether products must meet all the conditions or just any one of them to be part of the collection.
+
+For instance, imagine you set the following two conditions for a collection:
+- Product title is equal to **shirt**.
+- Price is less than **$100.01**.
+
+If you choose to require all conditions, only products that are have title **shirt** and are priced at** $100** or less will be included. This means a product must meet both criteria to be part of the collection.
+
+On the other hand, if you opt for any condition, products will be included if they either have the **shirt** title or are priced at **$100** or less. In this case, a product only needs to satisfy one of the conditions to be included in the collection.

@@ -11,7 +11,7 @@ const config = {
   title: 'Becomy Help Center',
   tagline: 'Versatile Ecommerce Solution',
   favicon: 'img/favicon.ico',
-
+  staticDirectories: ['static'],
   url: 'https://docs-becomy.surge.sh',
   baseUrl: '/',
   organizationName: 'becomy',
@@ -204,6 +204,7 @@ const config = {
       }
     }
   },
+
 };
 
 export default config;
