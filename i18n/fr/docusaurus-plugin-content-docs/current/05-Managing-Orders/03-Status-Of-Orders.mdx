@@ -1,0 +1,100 @@
+---
+title: Comprendre les Statuts de vos Commandes
+hide_title: true
+slug: /orders/statuses
+description: Comprenez tout sur les statuts de vos commandes.
+custom_edit_url: null
+toc_min_heading_level: 2
+toc_max_heading_level: 5
+Keywords:
+  - Éditeur de Texte Riche
+  - Formatage de Contenu
+  - Stylisation de Texte
+  - Images
+  - Marquage HTML
+  - Vidéos
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl";
+
+<head>
+  <meta
+    property="twitter:description"
+    content="Comprenez tout sur les statuts de vos commandes."
+  />
+  <meta
+    property="og:url"
+    content="https://docs-becomy.surge.sh/orders/statuses"
+  />
+  <link rel="canonical" href="https://docs-becomy.surge.sh/orders" />
+  <link
+    rel="alternate"
+    href="https://docs-becomy.surge.sh/orders/fr"
+    hreflang="fr"
+  />
+</head>
+
+# Comprendre les Statuts de Vos Commandes
+
+Les commandes ont divers statuts tels que le statut de commande, le statut de paiement, le statut d'exécution et le statut de retour. Ces statuts sont utilisés pour créer des vues qui vous aident à suivre l'avancement des commandes et à identifier celles qui nécessitent une action.
+
+Vous pouvez filtrer vos commandes en utilisant différentes combinaisons de statuts de commande.
+
+## Statut de Commande
+
+Les commandes peuvent être **Ouvertes** ou **Archivées**, mais peuvent également avoir des statuts supplémentaires. Les commandes archivées qui ont été annulées afficheront à la fois les statuts **Annulé** et **Archivé**. Les commandes ont un ou plusieurs des statuts suivants :
+
+| Statut      | Description                                                                                                                         |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| **Ouvert**  | La commande a été passée ou créée. Il y a du travail à faire, comme traiter le paiement, exécuter la commande ou gérer les retours. |
+| **Archivé** | La commande a été archivée manuellement ou automatiquement.                                                                         |
+| **Annulé**  | La commande a été annulée. Si elle n'a pas été entièrement remboursée, il peut encore y avoir du travail restant.                   |
+
+## Statut de Paiement
+
+Le statut de paiement d'une commande est crucial pour déterminer les tâches que vous devez accomplir. Les commandes peuvent avoir un ou plusieurs des statuts de paiement suivants :
+
+| Statut                      | Description                                                                                                                                                                                                                                                                                   |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **En attente**              | Le paiement est en attente car soit le client a utilisé un mode de paiement qui prend du temps à traiter, soit vous avez défini les conditions de paiement lors de la création de la commande. Ce statut s'applique également aux modes de paiement manuels comme le paiement à la livraison. |
+| **Autorisé**                | Le fournisseur de paiement a validé les informations de paiement. Cela s'affiche si vous capturez les paiements manuellement. Vous devez capturer le paiement avant que la période d'autorisation n'expire.                                                                                   |
+| **En retard**               | Le paiement n'a pas été capturé avant la date limite fixée dans les conditions de paiement.                                                                                                                                                                                                   |
+| **Expirant**                | Ce n'est pas un statut de paiement, mais une étiquette expirante apparaît deux jours avant la date limite pour capturer un paiement **Autorisé**.                                                                                                                                             |
+| **Expiré**                  | Le paiement n'a pas été capturé avant l'expiration fixée par le fournisseur de paiement. Pour certains fournisseurs, cela indique un paiement échoué.                                                                                                                                         |
+| **Payé**                    | Le paiement a été capturé, soit automatiquement, soit manuellement, ou la commande a été marquée comme payée.                                                                                                                                                                                 |
+| **Remboursé**               | Le montant total payé par le client a été remboursé.                                                                                                                                                                                                                                          |
+| **Partiellement remboursé** | Une partie du paiement total a été remboursée.                                                                                                                                                                                                                                                |
+| **Partiellement payé**      | Un paiement partiel a été capturé pour la commande.                                                                                                                                                                                                                                           |
+| **Annulé**                  | La commande non payée a été annulée.                                                                                                                                                                                                                                                          |
+| **Non payé**                | Ce statut inclut les commandes en statuts **Autorisé**, **En attente**, **Expiré**, et **Partiellement payé**.                                                                                                                                                                                |
+
+## Statut d'Exécution
+
+Une commande peut avoir l'un des statuts d'exécution suivants :
+
+- **Exécuté**
+- **Non Exécuté**
+- **Partiellement Exécuté**
+- **Programmé**
+- **En attente**
+
+Lorsqu'une commande est passée, elle est **Non Exécutée** à moins que la capture automatique du paiement et l'exécution de tous les articles n'aient été activées dans vos paramètres de paiement.
+
+Si seuls certains articles ont été expédiés, le statut de la commande devient **Partiellement Exécuté**. Une fois tous les articles expédiés, elle est **Exécutée**.
+
+Les commandes d'abonnement prépayées apparaissent comme **Programmées** jusqu'à ce que la date d'exécution soit atteinte, après quoi elles deviennent **Non Exécutées**.
+
+Si des offres supplémentaires ont été présentées au client lors du passage à la caisse, le statut d'exécution est temporairement défini sur **En attente**. Vous pouvez réserver l'inventaire, mais vous ne pouvez pas exécuter la commande tant que la mise en attente n'est pas levée.
+
+Les mises en attente d'exécution manuelles affichent également le statut **En attente**.
+
+## Statut de Retour
+
+Les commandes peuvent avoir plusieurs retours, et ce statut indique la tâche la plus importante liée aux retours. Les commandes sans retours n'ont pas de statut de retour. Si une commande a au moins un retour, elle aura l'un des statuts suivants :
+
+| Statut                  | Description                                                                                                                                             |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Retour demandé**      | Un retour a été demandé pour des articles dans la commande. Vous pouvez approuver ou refuser la demande.                                                |
+| **Retour en cours**     | Le retour a été approuvé ou créé dans l'administration Becomy. Vous pouvez gérer le retour, remettre des articles en stock ou émettre un remboursement. |
+| **Retourné**            | Le retour est complet et aucune autre action n'est requise.                                                                                             |
+| **Inspection terminée** | Les articles du retour ont été inspectés, et vous pouvez rembourser le retour en fonction des résultats de l'inspection.                                |

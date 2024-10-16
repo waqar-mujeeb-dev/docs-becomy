@@ -4,22 +4,22 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import { themes as prismThemes } from 'prism-react-renderer';
+import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Becomy Help Center',
-  tagline: 'Versatile Ecommerce Solution',
-  favicon: 'img/favicon.ico',
+  title: "Becomy Help Center",
+  tagline: "Versatile Ecommerce Solution",
+  favicon: "img/favicon.ico",
 
-  url: 'https://docs-becomy.surge.sh',
-  baseUrl: '/',
-  organizationName: 'becomy',
-  projectName: 'docs-becomy',
+  url: "https://docs-becomy.surge.sh",
+  baseUrl: "/",
+  organizationName: "becomy",
+  projectName: "docs-becomy",
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw',
-  onBrokenAnchors: 'throw',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "throw",
+  onBrokenAnchors: "throw",
   trailingSlash: true,
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -27,23 +27,21 @@ const config = {
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
-          sidebarPath: './sidebars.js',
-          rehypePlugins: [
-
-          ],
+          routeBasePath: "/",
+          sidebarPath: "./sidebars.js",
+          rehypePlugins: [],
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       }),
     ],
@@ -53,58 +51,31 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/becomy-thumbnail.png',
+      image: "img/becomy-thumbnail.png",
       navbar: {
-        title: 'Becomy.',
+        title: "Becomy.",
         // logo: {
         //   alt: 'Becomy Logo',
         //   src: 'img/b-logo.svg',
         // },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Topics',
+            type: "docSidebar",
+            sidebarId: "tutorialSidebar",
+            position: "left",
+            label: "Topics",
           },
 
           {
-            type: 'localeDropdown',
-            position: 'right',
+            type: "localeDropdown",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        style: "light",
+
+        copyright: `Copyright © ${new Date().getFullYear()} Becomy Docs`,
       },
       prism: {
         theme: prismThemes.github,
@@ -112,65 +83,70 @@ const config = {
       },
       trailingTrash: true,
       metadata: [
-        { name: 'Tags', content: 'Becomy, ecommerce, documentation, guide, tutorial' },
-        { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:image', content: 'img/becomy-thumbnail.png' },
-        { name: 'twitter:site', content: '@Becomy' },
-        { name: 'twitter:creator', content: '@BecomySupport' },
-        { property: 'og:image', content: 'img/becomy-thumbnail.png' },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:site_name', content: 'Becomy Help Center' },
+        {
+          name: "Tags",
+          content: "Becomy, ecommerce, documentation, guide, tutorial",
+        },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:image", content: "img/becomy-thumbnail.png" },
+        { name: "twitter:site", content: "@Becomy" },
+        { name: "twitter:creator", content: "@BecomySupport" },
+        { property: "og:image", content: "img/becomy-thumbnail.png" },
+        { property: "og:type", content: "website" },
+        { property: "og:site_name", content: "Becomy Help Center" },
       ],
       headTags: [
         // Declare a <link> preconnect tag
         {
-          tagName: 'link',
+          tagName: "link",
           attributes: {
-            rel: 'preconnect',
-            href: 'https://example.com',
+            rel: "preconnect",
+            href: "https://example.com",
           },
         },
         // Declare some json-ld structured data
         {
-          tagName: 'script',
+          tagName: "script",
           attributes: {
-            type: 'application/ld+json',
+            type: "application/ld+json",
           },
           innerHTML: JSON.stringify({
-            '@context': 'https://schema.org/',
-            '@type': 'Organization',
-            name: 'Becomy',
-            url: 'https://becomystaging.com/',
-            logo: 'https://becomystaging.com/path-to-your-logo.png',
+            "@context": "https://schema.org/",
+            "@type": "Organization",
+            name: "Becomy",
+            url: "https://becomystaging.com/",
+            logo: "https://becomystaging.com/path-to-your-logo.png",
           }),
         },
         // Additional tags for Twitter Card
         {
-          tagName: 'meta',
+          tagName: "meta",
           attributes: {
-            name: 'twitter:title',
-            content: 'Getting Started with Becomy: A Comprehensive Documentation',
+            name: "twitter:title",
+            content:
+              "Getting Started with Becomy: A Comprehensive Documentation",
           },
         },
         {
-          tagName: 'meta',
+          tagName: "meta",
           attributes: {
-            name: 'twitter:description',
-            content: 'Explore Becomy effortlessly with our user-friendly docs and videos. Get answers to your questions and enhance your ecommerce journey. Start now!',
+            name: "twitter:description",
+            content:
+              "Explore Becomy effortlessly with our user-friendly docs and videos. Get answers to your questions and enhance your ecommerce journey. Start now!",
           },
         },
         {
-          tagName: 'meta',
+          tagName: "meta",
           attributes: {
-            name: 'twitter:image',
-            content: '/static/img/becomy-thumbnail.png',
+            name: "twitter:image",
+            content: "/static/img/becomy-thumbnail.png",
           },
         },
         {
-          tagName: 'meta',
+          tagName: "meta",
           attributes: {
-            name: 'twitter:url',
-            content: 'https://docs-becomy.surge.sh/',
+            name: "twitter:url",
+            content: "https://docs-becomy.surge.sh/",
           },
         },
       ],
@@ -188,21 +164,19 @@ const config = {
         },
       };
     },
-
-
   ],
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr'],
+    defaultLocale: "en",
+    locales: ["en", "fr"],
     localeConfigs: {
       en: {
-        label: 'English'
+        label: "English",
       },
       fr: {
-        label: 'Français'
-      }
-    }
+        label: "Français",
+      },
+    },
   },
 };
 

@@ -1,0 +1,133 @@
+---
+title: Annuler des Commandes
+hide_title: true
+slug: /orders/cancelling-orders
+description: Apprenez tout sur la façon dont vous pouvez annuler les commandes que vous avez reçues.
+custom_edit_url: null
+toc_min_heading_level: 2
+toc_max_heading_level: 5
+Keywords:
+  - Éditeur de Texte Riche
+  - Formatage de Contenu
+  - Stylisation de Texte
+  - Images
+  - Marquage HTML
+  - Vidéos
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl";
+
+<head>
+  <meta
+    property="twitter:description"
+    content="Apprenez tout sur la façon dont vous pouvez annuler les commandes que vous avez reçues."
+  />
+  <meta
+    property="og:url"
+    content="https://docs-becomy.surge.sh/orders/cancelling-orders"
+  />
+  <link rel="canonical" href="https://docs-becomy.surge.sh/orders" />
+  <link
+    rel="alternate"
+    href="https://docs-becomy.surge.sh/orders/fr"
+    hreflang="fr"
+  />
+</head>
+
+# Annuler des Commandes
+
+Vous pouvez annuler, archiver et supprimer des commandes. Annuler une commande signifie arrêter une commande en cours. Archiver une commande signifie que vous avez terminé avec la commande et que vous souhaitez l'enlever de votre liste de commandes ouvertes. Supprimer une commande signifie que vous l'enlevez de votre administration `Becomy`.
+
+## Annuler une Commande
+
+Annuler une commande signifie interrompre son traitement. Par exemple, si un client demande l'annulation ou si la commande semble frauduleuse, vous pouvez l'annuler pour empêcher votre équipe ou les services d'exécution de poursuivre la commande. Vous pouvez également annuler une commande si un article commandé est indisponible.
+
+Selon l'état de la commande au moment de son annulation, certaines actions de suivi peuvent être nécessaires.
+
+### État de la Commande & Actions de Suivi
+
+- **Payée mais aucun article n'est exécuté**  
+  Lorsque vous annulez la commande, il y a deux options de remboursement :
+
+  - **Rembourser le montant total maintenant :** Un remboursement complet est automatiquement émis au client. Cette option est sélectionnée par défaut.
+  - **Rembourser plus tard :** Aucun remboursement n'est émis au moment de l'annulation. Étant donné que vous ne pouvez pas émettre un remboursement partiel lors de l'annulation, cette option vous permet d'enquêter ou d'émettre un remboursement partiel plus tard. Assurez-vous de suivre les commandes non remboursées pour éviter les rétrofacturations.
+
+  Si un service d'exécution tiers est impliqué, vous devrez peut-être faire un suivi. Si vous avez acheté une étiquette d'expédition, vous pouvez annuler l'étiquette.
+
+- **Exécutée mais paiement non collecté**  
+  Annuler la commande vous empêche de collecter le paiement. Pour récupérer les articles, utilisez le processus de retour.
+
+- **Non payée et non exécutée**  
+  Archivez manuellement la commande si elle n'est pas automatiquement archivée.
+
+:::note
+Les frais de transaction par carte de crédit ne sont pas remboursés lorsque vous émettez un remboursement.
+:::
+
+Après avoir annulé une commande, les détails concernant le réapprovisionnement et les remboursements sont stockés dans la chronologie de la commande.
+
+### Changements de Statut de Paiement après l'Annulation
+
+- Si le paiement n'a pas été capturé, le statut change en **Annulé**.
+- Si le paiement a été entièrement remboursé, le statut change en **Remboursé**.
+- Si vous émettez plus tard un remboursement partiel pour une commande annulée, le statut change en **Partiellement remboursé**.
+
+Si une commande est en statut **En attente de paiement**, il peut ne pas être possible de l'annuler. En savoir plus sur les commandes avec des paiements en attente.
+
+### Étapes pour Annuler une Commande
+
+1. Dans votre administration `Becomy`, allez dans **Commandes**.
+2. Cliquez sur la commande que vous souhaitez annuler.
+3. Cliquez sur **Plus d'actions** > **Annuler la commande**.
+4. Dans la section **Rembourser le paiement**, choisissez comment rembourser :
+   - Pour émettre un remboursement total maintenant, sélectionnez **Maintenant**.
+   - Pour émettre un remboursement plus tard, sélectionnez **Plus tard**.
+5. Dans le menu déroulant **Raison de l'annulation**, sélectionnez la raison de l'annulation.
+6. (Facultatif) Entrez une note dans le champ **Note pour le personnel**.
+7. (Facultatif) Sélectionnez **Réapprovisionner l'inventaire** pour réapprovisionner les articles remboursés.
+8. (Facultatif) Pour notifier le client, sélectionnez **Envoyer une notification au client**.
+9. Cliquez sur **Annuler la commande**.
+
+## Archiver des Commandes Manuellement
+
+La plupart des commandes sont automatiquement archivées lorsque vous avez terminé avec elles, mais vous pouvez archiver manuellement les commandes si nécessaire. Si l'archivage automatique est désactivé, l'archivage manuel aide à garder votre vue des commandes ouvertes propre.
+
+Par défaut, les commandes suivantes sont automatiquement archivées :
+
+- Commandes qui sont payées et exécutées
+- Commandes qui sont entièrement remboursées
+- Commandes partiellement remboursées, exécutées et sans solde restant
+
+:::note
+Si les commandes ne sont pas archivées automatiquement, vous pouvez activer l'option **Archiver automatiquement la commande** dans la section Traitement des commandes des paramètres de paiement dans votre administration `Becomy`.
+:::
+
+Les commandes archivées sont affichées dans la vue **Commandes fermées**.
+
+### Étapes pour Archiver une Commande
+
+1. Dans votre administration `Becomy`, allez dans **Commandes**.
+2. Cliquez sur le numéro de la commande que vous souhaitez archiver.
+3. Cliquez sur **Plus d'actions**, puis **Archiver la commande**.
+
+Vous pouvez également effectuer des actions groupées pour archiver ou désarchiver plusieurs commandes.
+
+## Supprimer une Commande
+
+Les commandes supprimées sont enlevées de votre administration `Becomy` et ne sont plus suivies dans les rapports. Seuls certains types de commandes peuvent être supprimés, y compris :
+
+- Commandes payées par des méthodes de paiement manuelles
+- Commandes créées comme brouillons et marquées comme payées
+- Commandes de test payées avec le Bogus Gateway ou `Becomy` Payments en mode test
+- Commandes importées via l'API `Becomy`
+- Commandes brouillons
+
+Avant de supprimer une commande, elle doit être archivée ou annulée. Les commandes payées par un bon cadeau peuvent être archivées mais pas supprimées.
+
+Si vous avez acheté une étiquette d'expédition pour la commande mais ne l'avez pas utilisée, annulez l'étiquette avant de supprimer la commande.
+
+### Étapes pour Supprimer une Commande
+
+1. Dans votre administration `Becomy`, allez dans **Commandes**.
+2. Cliquez sur une commande archivée ou annulée.
+3. Cliquez sur **Supprimer la commande**, puis confirmez en cliquant à nouveau sur **Supprimer la commande**.

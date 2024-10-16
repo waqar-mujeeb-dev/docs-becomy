@@ -1,0 +1,13 @@
+{
+  "label": "Orders Management",
+  "collapsible": true,
+  "collapsed": false,
+  "className": "hidden",
+  "link": {
+    "type": "generated-index",
+    "title": "Orders",
+    "slug": "/orders",
+    "description": "Once you receive an order, you can manage it from the Orders page in your Becomy admin. You have a range of order management options available, including viewing, editing, processing, printing, and exporting orders.",
+    "keywords": ["orders, searching-orders, collections, shipping, pricing"]
+  }
+}
