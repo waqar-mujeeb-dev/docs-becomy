@@ -1,0 +1,205 @@
+---
+title: Collectes automatisées
+toc_min_heading_level: 2
+toc_max_heading_level: 4
+slug: /collections/automated-collections
+custom_edit_url: null
+description: Les collections automatisées sont créées sur la base des conditions que vous spécifiez
+---
+import Image from '@site/src/components/Images/Image';
+import { Table } from '@site/src/components/DataTable';
+
+import { MetaData } from '@site/src/components/MetaData'
+
+<MetaData
+  title="Aperçu des collections"
+  description="Les collections automatisées sont créées sur la base des conditions que vous spécifiez"
+  ogUrl="https://docs-becomy.surge.sh/collections/automated-collections"
+  ogSiteName="Documentation Becomy"
+  twitterDescription="Les collections automatisées sont créées sur la base des conditions que vous spécifiez"
+  canonicalUrl="https://docs-becomy.surge.sh/collections/automated-collections"
+  alternateUrls={[
+    "https://docs-becomy.surge.sh/collections/automated-collections/fr",
+    "https://docs-becomy.surge.sh/collections/automated-collections/es"
+  ]}
+/>
+
+
+Les collections automatisées sont un moyen puissant d'organiser les produits sans avoir besoin de mises à jour manuelles. En définissant des conditions spécifiques, les produits qui répondent à ces critères sont automatiquement ajoutés à la collection. Cela permet de gagner du temps et de s'assurer que vos collections sont toujours à jour.
+
+Par exemple, vous pouvez créer une collection automatisée pour les "Soldes d'été" en définissant des conditions telles que les étiquettes de produit, les gammes de prix ou les niveaux de stock. Tout produit répondant à ces conditions sera inclus dans la collection. Cela est particulièrement utile pour les promotions saisonnières ou les événements spéciaux où la gamme de produits peut changer fréquemment.
+
+Pour configurer une collection automatisée, allez dans la section Collections de votre admin Becomy et choisissez de créer une nouvelle collection. Sélectionnez l'option pour une collection automatisée et définissez les conditions que les produits doivent remplir pour être inclus. Vous pouvez utiliser divers critères tels que le titre du produit, le type, le fournisseur, le prix, et plus encore. Une fois les conditions définies, le système ajoutera automatiquement tous les produits correspondants à la collection.
+
+Les collections automatisées permettent non seulement de gagner du temps, mais aussi de maintenir la cohérence de votre boutique. Elles garantissent que les nouveaux produits sont rapidement ajoutés aux collections pertinentes, améliorant ainsi l'expérience d'achat de vos clients. En utilisant des collections automatisées, vous pouvez vous concentrer davantage sur d'autres aspects de votre entreprise tout en veillant à ce que l'organisation de vos produits reste efficace et efficiente.
+
+#### Création d'une collection automatisée
+
+La configuration d'une collection automatisée implique quelques étapes simples :
+
+1. Depuis votre tableau de bord admin, allez à **Produits > Collections**.
+   <Image 
+     className="flex justify-start items-center"
+     src="/img/collections/collections-sidenav.png" 
+     alt="Aller à Produits > Collections" 
+   />
+2. Cliquez sur **Créer une collection** et entrez un titre et une description.
+   <Image 
+     className="flex justify-start items-center w-3/5"
+     src="/img/collections/title-description.png" 
+     alt="Créer une collection" 
+   />
+3. Dans la section **Type de collection**, choisissez **Automatique**.
+   <Image 
+     className="flex justify-start items-center w-3/5"
+     src="/img/collections/automated.png" 
+     alt="Collection automatique" 
+   />
+4. Définissez les conditions que les produits doivent remplir pour être inclus. Vous pouvez utiliser divers critères tels que le titre du produit, le type, le fournisseur, le prix, et plus encore.
+   <Image 
+     className="flex justify-start items-center w-3/5"
+     src="/img/collections/conditions-type.png" 
+     alt="Type de conditions" 
+   />
+5. Cliquez sur **Enregistrer**. Le système ajoutera automatiquement les produits correspondants. Vous pouvez également définir l'ordre de tri pour l'affichage des produits.
+
+#### Ajout de conditions
+
+Lorsque vous créez une collection automatisée, vous pouvez ajouter une ou plusieurs conditions pour récupérer les produits qui répondent à ces conditions. Si vous avez déjà ajouté des conditions sur des collections, vous verrez également ces conditions dans cette section.
+
+1. Dans la section **conditions de collection**, sélectionnez le type de condition.
+2. Dans le deuxième menu déroulant, sélectionnez comment le produit doit correspondre à la condition. Par exemple, pour le prix, vous verrez **est égal**, **est inférieur à**, **est supérieur à**, etc.
+3. Dans le troisième champ, ajoutez la valeur de la condition.
+4. Si vous souhaitez ajouter plus d'une condition, cliquez sur **+ Ajouter une autre condition** et répétez les étapes ci-dessus.
+5. Cliquez sur **Enregistrer** pour ajouter les produits correspondants à la collection.
+
+:::info
+Une fois qu'une collection est créée, son type (manuel ou automatisé) ne peut pas être modifié. Si vous devez changer le type, vous devrez créer une nouvelle collection avec le type souhaité et la configurer en conséquence. Cela garantit que la structure organisationnelle de vos collections reste cohérente et empêche les modifications accidentelles qui pourraient affecter la catégorisation de vos produits.
+:::
+
+#### Ajout de pièces jointes à une collection
+
+Vous pouvez améliorer vos collections en ajoutant plusieurs images en tant que pièces jointes. Cette fonctionnalité vous permet de télécharger diverses images qui peuvent être affichées à la fois en vue miniature et en vue carrousel, offrant une expérience visuelle plus riche à vos clients.
+
+##### Étapes pour ajouter des pièces jointes
+
+1. Depuis votre tableau de bord admin, allez à **Produits > Collections**.
+2. Cliquez sur la collection à laquelle vous souhaitez ajouter des pièces jointes.
+3. Dans la page de détails de la collection, trouvez la section **Pièces jointes**.
+   <Image 
+     className="flex justify-start items-center shadow-md"
+     src="/img/collections/attachments.png" 
+     alt="Aller à Produits > Collections" 
+   />
+
+4. Cliquez sur **Télécharger des images** pour sélectionner et télécharger plusieurs images depuis votre appareil.
+5. Une fois téléchargées, vous pouvez prévisualiser les images à la fois en vue miniature et en vue carrousel.
+   <Image 
+     className="flex justify-start items-center w-3/5 shadow-md"
+     src="/img/collections/attachment-thubmnail.png" 
+     alt="Vue miniature" 
+   />
+   <Image 
+     className="flex justify-start items-center w-3/5 shadow-md"
+     src="/img/collections/attachment-carousel.png" 
+     alt="Vue carrousel" 
+   />
+
+6. Cliquez sur **Enregistrer** pour ajouter les images à la collection.
+
+Ajouter plusieurs images à vos collections aide à présenter vos produits plus efficacement, facilitant ainsi la navigation et la prise de décision pour les clients. La vue miniature offre un aperçu rapide, tandis que la vue carrousel permet de regarder chaque image en détail.
+
+:::info
+Assurez-vous que les images que vous téléchargez sont de haute qualité et pertinentes pour la collection. Cela améliorera l'attrait visuel et offrira une meilleure expérience d'achat à vos clients.
+:::
+
+
+
+#### Mise à jour des collections automatisées
+
+Vous pouvez mettre à jour les collections automatisées en modifiant la collection spécifique ou en modifiant le produit dans la collection pour qu'il ne corresponde plus à la condition.
+
+1. Depuis votre admin Becomy, allez à **Produits -> Collections**.
+2. Cliquez sur la collection que vous souhaitez mettre à jour.
+3. Apportez toutes les modifications aux conditions, aux pièces jointes, au titre ou à la description de la collection.
+4. Cliquez sur **Enregistrer** pour mettre à jour les collections afin de refléter les dernières modifications.
+
+#### Remplacer la collection automatisée par une collection manuelle
+
+Vous ne pouvez pas changer une collection manuelle en collection automatisée ou vice versa. Mais vous pouvez créer une nouvelle collection manuelle pour remplacer la collection automatisée existante.
+
+#### Supprimer une collection
+
+1. Depuis votre admin Becomy, naviguez vers **Produits -> Collections**.
+2. Dans la liste des collections, trouvez la collection que vous souhaitez supprimer.
+3. Cliquez sur le bouton **Supprimer** sur la collection.
+4. Une boîte de dialogue de confirmation apparaîtra. Cliquez sur **Confirmer** pour supprimer définitivement la collection.
+
+:::danger
+La suppression d'une collection est une action permanente et ne peut pas être annulée. Assurez-vous que vous souhaitez vraiment supprimer la collection avant de confirmer.
+:::
+
+## Directives pour les conditions de collection automatisée
+
+Les conditions pour les collections automatisées vous permettent de regrouper dynamiquement les produits en fonction de critères spécifiques, garantissant que vos collections sont toujours à jour. 
+Les utilisateurs peuvent ajouter diverses conditions telles que les étiquettes de produit, les gammes de prix, les niveaux de stock, et plus encore. En définissant ces conditions, les produits qui répondent aux critères spécifiés seront automatiquement 
+inclus dans la collection.
+
+
+Titres et étiquettes
+Définir des conditions basées sur le titre du produit, le titre de la variante, le type ou le fournisseur
+Définir des conditions basées sur les étiquettes de produit
+
+
+
+### Définir des conditions basées sur le titre du produit ou de la variante, le type ou le fournisseur
+
+Vous pouvez configurer des conditions basées sur le titre du produit, le titre de la variante, le type ou le fournisseur. Vous pouvez sélectionner l'option dans la liste déroulante de l'opérateur pour spécifier comment un 
+produit doit être assorti à la valeur du champ de condition que vous entrez dans le troisième champ de condition. La valeur que vous entrez dans le champ de condition est 
+utilisée pour filtrer les produits, et les produits correspondants sont affichés dans la collection. La valeur du champ de condition n'est pas sensible à la casse.
+
+Sélectionnez les options suivantes pour afficher des produits spécifiques en fonction de la valeur de condition que vous entrez.
+Cela vous aidera à filtrer et à afficher les produits qui répondent à vos critères.
+
+<Table
+  headers={["Terme", "Description"]}
+  rows={[
+		["contient", "Le titre du produit, la catégorie, le titre de la variante, le méta titre du produit, les méta mots-clés et le fournisseur du produit contiennent la valeur que vous entrez. Pour l'instant, vous pouvez entrer au moins un caractère et les valeurs que vous entrez ne peuvent pas avoir d'espaces de début ou de fin."],
+		["commence par", "La valeur commence par les caractères spécifiés."],
+		["se termine par", "La valeur se termine par les caractères spécifiés."],
+		["n'est pas", "La valeur ne correspond pas aux caractères spécifiés."],
+		["est égal à", "La valeur correspond exactement à la valeur que vous entrez."]
+	]}
+/>
+
+
+### Définir des conditions basées sur le prix du produit, la remise, le stock disponible et la TVA
+
+Les utilisateurs peuvent ajouter des conditions pour le prix, le stock disponible, la remise et la TVA pour filtrer dynamiquement les produits. Des conditions comme "inférieur à" et "supérieur à" permettent aux utilisateurs de spécifier des seuils numériques, garantissant que seuls les produits qui se situent en dessous ou au-dessus de ces valeurs sont inclus.
+
+<Table
+  headers={["Terme", "Description"]}
+  rows={[
+		["est égal", "La valeur correspond exactement à la valeur que vous entrez."],
+		["n'est pas égal", "La valeur ne correspond pas exactement à la valeur que vous entrez"],
+		["est supérieur à", "Le produit est supérieur à la valeur."],
+		["est inférieur à", "Le produit est inférieur à la valeur."],
+	]}
+/>
+
+- Sélectionnez **Prix du produit** dans le menu déroulant champ/statut.
+- Dans le menu déroulant de l'opérateur, sélectionnez **supérieur à**.
+- Dans le champ de valeur de condition, entrez le prix souhaité (par exemple, **50**).
+
+
+### Utilisation de conditions de sélection multiples
+
+Vous pouvez affiner vos collections en définissant plusieurs conditions de sélection. Cela vous permet de contrôler quels produits sont inclus en fonction de divers critères. Vous avez la flexibilité de décider si les produits doivent répondre à toutes les conditions ou à une seule d'entre elles pour faire partie de la collection.
+
+Par exemple, imaginez que vous définissiez les deux conditions suivantes pour une collection :
+- Le titre du produit est égal à **chemise**.
+- Le prix est inférieur à **100,01 $**.
+
+Si vous choisissez de nécessiter toutes les conditions, seuls les produits ayant le titre **chemise** et étant au prix de **100 $** ou moins seront inclus. Cela signifie qu'un produit doit répondre aux deux critères pour faire partie de la collection.
+
+D'autre part, si vous optez pour n'importe quelle condition, les produits seront inclus s'ils ont soit le titre **chemise** soit un prix de **100 $** ou moins. Dans ce cas, un produit n'a besoin de satisfaire qu'une seule des conditions pour être inclus dans la collection.
