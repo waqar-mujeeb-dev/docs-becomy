@@ -1,0 +1,13 @@
+{
+    "label": "Collections",
+    "collapsible": true,
+    "collapsed": false,
+    "className": "hidden",
+    "link": {
+      "type": "generated-index",
+      "title": "Collections",
+      "slug": "/collections",
+      "description": "Organize your products into collections, similar to Shopify collections, to enhance browsing and shopping experience.",
+      "keywords": ["collections, products, inventory, shopify, organization"]
+    }
+  }

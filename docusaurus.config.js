@@ -8,14 +8,15 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Becomy Help Center",
-  tagline: "Versatile Ecommerce Solution",
-  favicon: "img/favicon.ico",
+  title: 'Becomy Help Center',
+  tagline: 'Versatile Ecommerce Solution',
+  favicon: 'img/favicon.ico',
+  staticDirectories: ['static'],
+  url: 'https://docs-becomy.surge.sh',
+  baseUrl: '/',
+  organizationName: 'becomy',
+  projectName: 'docs-becomy',
 
-  url: "https://docs-becomy.surge.sh",
-  baseUrl: "/",
-  organizationName: "becomy",
-  projectName: "docs-becomy",
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "throw",
@@ -178,6 +179,7 @@ const config = {
       },
     },
   },
+
 };
 
 export default config;
