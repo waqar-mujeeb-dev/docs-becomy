@@ -1,0 +1,132 @@
+---
+title: Cancelling Orders
+hide_title: true
+slug: /orders/cancelling-orders
+description: Learn all about how you can cancel the orders you recieved.
+custom_edit_url: null
+toc_min_heading_level: 2
+toc_max_heading_level: 5
+Keywords:
+  - Rich Text Editor
+  - Content Formatting
+  - Text Styling
+  - Images
+  - HTML Markup
+  - Videos
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl";
+
+<head>
+  <meta
+    property="twitter:description"
+    content="Learn all about how you can cancel the orders you recieved."
+  />
+  <meta
+    property="og:url"
+    content="https://docs-becomy.surge.sh/orders/cancelling-orders"
+  />
+  <link rel="canonical" href="https://docs-becomy.surge.sh/orders" />
+  <link
+    rel="alternate"
+    href="https://docs-becomy.surge.sh/orders/fr"
+    hreflang="fr"
+  />
+</head>
+# Canceling Orders
+
+You can cancel, archive, and delete orders. Canceling an order means stopping an order that's in process. Archiving an order means you're done with the order and want to remove it from your open orders list. Deleting an order means you're removing it from your `Becomy` admin.
+
+## Cancel an Order
+
+Canceling an order means halting its processing. For instance, if a customer requests cancellation or the order appears fraudulent, you can cancel it to prevent your team or fulfillment services from continuing with the order. You can also cancel an order if an item ordered is unavailable.
+
+Depending on the state of the order when you cancel it, some follow-up actions may be required.
+
+### State of the Order & Follow-up Actions
+
+- **Paid for but no items are fulfilled**  
+  When you cancel the order, there are two refund options:
+
+  - **Refund the full amount now:** A full refund is automatically issued to the customer. This option is selected by default.
+  - **Refund later:** No refund is issued at the time of cancellation. Since you can't issue a partial refund during cancellation, this option lets you investigate or issue a partial refund later. Be sure to track non-refunded orders to avoid chargebacks.
+
+  If a third-party fulfillment service is involved, you may need to follow up. If you purchased a shipping label, you can void the label.
+
+- **Fulfilled but payment isn't collected**  
+  Canceling the order prevents you from collecting payment. To get the items returned, use the returns process.
+
+- **Not paid and not fulfilled**  
+  Archive the order manually if it isn’t archived automatically.
+
+:::note
+Credit card transaction fees aren't refunded when you issue a refund.
+:::
+
+After canceling an order, details regarding restocking and refunds are stored in the order's Timeline.
+
+### Payment Status Changes after Canceling
+
+- If payment wasn't captured, the status changes to **Voided**.
+- If payment was fully refunded, the status changes to **Refunded**.
+- If you later issue a partial refund for a canceled order, the status changes to **Partially refunded**.
+
+If an order is in **Pending payment** status, it might not be possible to cancel. Learn more about orders with pending payments.
+
+### Steps to Cancel an Order
+
+1. From your `Becomy` admin, go to **Orders**.
+2. Click the order you want to cancel.
+3. Click **More actions** > **Cancel order**.
+4. In the **Refund payment** section, choose how to refund:
+   - To issue a full refund now, select **Now**.
+   - To issue a refund later, select **Later**.
+5. In the **Reason for cancellation** drop-down, select the reason for canceling.
+6. (Optional) Enter a note in the **Staff note** field.
+7. (Optional) Select **Restock inventory** to restock the refunded items.
+8. (Optional) To notify the customer, select **Send a notification to the customer**.
+9. Click **Cancel order**.
+
+## Archive Orders Manually
+
+Most orders are automatically archived when you're done with them, but you can manually archive orders if necessary. If automatic archiving is disabled, manually archiving helps keep your open orders view tidy.
+
+By default, the following orders are automatically archived:
+
+- Orders that are paid for and fulfilled
+- Orders that are fully refunded
+- Orders that are partially refunded, fulfilled, and have no remaining balance
+
+:::note
+If orders aren't archived automatically, you can activate the **Automatically archive the order** option in the Order Processing section of the Checkout settings in your `Becomy` admin.
+:::
+
+Archived orders are displayed in the **Closed orders** view.
+
+### Steps to Archive an Order
+
+1. From your `Becomy` admin, go to **Orders**.
+2. Click the order number of the order you want to archive.
+3. Click **More actions**, then **Archive orders**.
+
+You can also perform bulk actions to archive or unarchive multiple orders.
+
+## Delete an Order
+
+Deleted orders are removed from your `Becomy` admin and are no longer tracked in reports. Only certain order types can be deleted, including:
+
+- Orders paid with manual payment methods
+- Orders created as drafts and marked as paid
+- Test orders paid with the Bogus Gateway or `Becomy` Payments in test mode
+- Orders imported via the `Becomy` API
+- Draft orders
+
+Before deleting an order, it must be archived or canceled. Orders paid with a gift card can be archived but not deleted.
+
+If you purchased a shipping label for the order but didn’t use it, void the label before deleting the order.
+
+### Steps to Delete an Order
+
+1. From your `Becomy` admin, go to **Orders**.
+2. Click an archived or canceled order.
+3. Click **Delete order**, then confirm by clicking **Delete order** again.

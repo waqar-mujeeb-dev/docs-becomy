@@ -1,0 +1,19 @@
+{
+  "label": "Gestion des Commandes",
+  "collapsible": true,
+  "collapsed": false,
+  "className": "hidden",
+  "link": {
+    "type": "generated-index",
+    "title": "Commandes",
+    "slug": "/orders",
+    "description": "Une fois que vous avez reçu une commande, vous pouvez la gérer depuis la page des Commandes dans votre administration Becomy. Vous disposez d'un éventail d'options de gestion des commandes, y compris la visualisation, l'édition, le traitement, l'impression et l'exportation des commandes.",
+    "keywords": [
+      "produits",
+      "inventaire",
+      "collections",
+      "expédition",
+      "tarification"
+    ]
+  }
+}
