@@ -64,7 +64,7 @@ export const cardData = [
         desc_id: "",
         description:
           "Understand how to handle shipping logistics, set shipping preferences, and ensure timely delivery to your customers",
-        url: "/",
+        url: "/shipping",
       },
     ],
   },

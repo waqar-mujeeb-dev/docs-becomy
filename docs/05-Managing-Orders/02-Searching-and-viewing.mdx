@@ -36,54 +36,46 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 
 # Searching and Viewing Orders
 
-By default, all your orders are displayed on the Orders page. You can customize your order views or create new ones that include filters, sorting, and column arrangements, making it easier to quickly access and prioritize groups of orders in the future.
+By default, all your orders are displayed on the Orders page. You can customize your order views or create new ones that include filters and sorting, making it easier to quickly access and prioritize groups of orders in the future.
+
+![Becomy Orders](../../static/img/order-filters.png)
 
 ## Viewing details from the orders list
 
-When you click parts of the orders list, you can view order details.
-
-For example, clicking a customer's name will show details like customer location, number of orders, and contact information.
-
-Icons next to your order numbers also provide extra information. For example, you can see if there are notes or comments on the order or if it's at high risk of fraud. Hover over an icon to open the pop-up.
-
-## Filtering orders
-
-In your Becomy admin, you can use filters to control which orders are displayed and perform bulk actions on multiple orders. You can also filter orders using a custom search. To reuse filters, you can save them as order views.
-
-You can do the following with order filters:
-
-- Filter your orders
-- Filter by location
-- Filter with a custom term
-- Use bulk actions with a view or filter
-- Match third-party payment information with Becomy orders
-
-:::note
-
-To save your order filters, learn more about making changes to the current view or creating a new view.
-
-:::
+You can sort orders or apply different available filters in order to see specific orders based on that filters or sorting method.
 
 ### Filter your orders
 
 Filters determine which orders are displayed in an order view. For instance, the **All** view has no filters. The default **Unfulfilled** view uses the **Fulfillment status** filter set to "unfulfilled" to show all unfulfilled orders in your store.
 
-You can also combine filters to display orders that match multiple criteria. For example, you can combine the **Low risk** and **Unpaid** filters to see orders that are both low risk and unpaid.
+You can also combine filters to display orders that match multiple criteria. For example, you can combine the **open** and **Unfulfilled** filters to see orders that are both low risk and unpaid.
 
 ### Available filters
 
 You can apply the following filters on your order list:
 
 - **Delivery Method**: local delivery, pickup in-store, ship to customer
-- **Destination**: continent, country, state/province where the order is shipped
+- **LOcation**: continent, country, state/province where the order will be shipped
 - **Status**: open, closed.
 - **Payment status**: authorized, paid, partially paid, partially refunded, pending, refunded, unpaid, voided
-- **Product**: filter by product title or SKU
 - **Fulfillment status**: fulfilled, unfulfilled, refunded, scheduled, on hold
 - **Delivery status**: in transit, out for delivery, attempted delivery, delayed, failed delivery, delivered, tracking added, no status
 - **Date**: in the last week, month, 3 months, year, or custom
+- **Payment method**: which payment method is being used for this order
+- **WArehouse**: if you have multiple warehouses then you can also filter orders on base of specific warehouse.
 
-You can only save changes to order views from the Becomy admin on a desktop computer.
+![Becomy Order Filters](../../static/img/orders-filtering.png)
+
+### Available Sorting Methods
+
+You can apply the following sorting methods on your order list:
+
+- **oldest to newest**
+- **newest to oldest**
+- **alphabetically from a to z**
+- **alphabetically from z to a**
+
+![Becomy Order Sorting](../../static/img/orders-sorting.png)
 
 ## Order views
 
@@ -93,22 +85,17 @@ An order view is a customized display of orders based on the criteria you set to
 
 - **All**
 - **Unfulfilled**
-- **Unpaid**
+- **Fulfilled**
+- **Refunded**
 - **Open**
 - **Closed**
 
-If **Locations** is activated for your store, a **Local Delivery** view is also available.
+If **Location** is activated for your store, a **Local Delivery** view is also available.
 
 In any view except **All**, you can:
 
 - Select filters
-- Show or hide columns
-- Reorder columns
 - Choose sorting criteria and sorting order
-- Filter using a custom search term
-- Rename the view
-- Delete the view
+- choose any of the filters
 
-Although you can't change or delete the **All** view, you can create a new view based on it.
-
-Orders in saved views are updated automatically. For instance, if you saved a filter for **Paid** orders, any orders that are paid afterward will automatically appear in that view.
+Orders in saved views are updated automatically. For instance, if you saved a filter for **fulfilled** orders, any orders that are fulfilled afterward will automatically appear in that view.
