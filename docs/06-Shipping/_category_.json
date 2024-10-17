@@ -1,0 +1,13 @@
+{
+  "label": "Shpping Setup",
+  "collapsible": true,
+  "collapsed": false,
+  "className": "hidden",
+  "link": {
+    "type": "generated-index",
+    "title": "Shipping Setup",
+    "slug": "/shipping",
+    "description": "Order fulfillment and shipping can be one of the more intricate aspects of managing a business. It can also represent a significant cost per order, making it challenging to determine how much of that cost to charge your customers.You can explore the various shipping carriers, available shipping rates, and learn how to coordinate with fulfillment services. Once you're familiar with how shipping operates in Becomy, you can set up your shipping configurations, including shipping rates, shipping profiles, order routing, and manageable inventory.",
+    "keywords": ["orders, searching-orders, collections, shipping, pricing"]
+  }
+}

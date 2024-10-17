@@ -1,18 +1,18 @@
 ---
-title: Searching and Viewing
+title: Recherche et Affichage
 hide_title: true
-slug: /orders/searching-and-viewing
-description: Learn all about how you can view and filter your orders in admin dashboard.
+slug: /orders/recherche-et-affichage
+description: Apprenez tout sur la façon dont vous pouvez voir et filtrer vos commandes dans le tableau de bord d'administration.
 custom_edit_url: null
 toc_min_heading_level: 2
 toc_max_heading_level: 5
 Keywords:
-  - Rich Text Editor
-  - Content Formatting
-  - Text Styling
+  - Éditeur de texte enrichi
+  - Formatage de contenu
+  - Style de texte
   - Images
-  - HTML Markup
-  - Videos
+  - Marquage HTML
+  - Vidéos
 ---
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
@@ -20,11 +20,11 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 <head>
   <meta
     property="twitter:description"
-    content="Learn all about how you can view and filter your orders in admin dashboard."
+    content="Apprenez tout sur la façon dont vous pouvez voir et filtrer vos commandes dans le tableau de bord d'administration."
   />
   <meta
     property="og:url"
-    content="https://docs-becomy.surge.sh/orders/searching-and-viewing/"
+    content="https://docs-becomy.surge.sh/orders/recherche-et-affichage/"
   />
   <link rel="canonical" href="https://docs-becomy.surge.sh/orders" />
   <link
@@ -34,81 +34,68 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
   />
 </head>
 
-# Searching and Viewing Orders
+# Recherche et Affichage des Commandes
 
-By default, all your orders are displayed on the Orders page. You can customize your order views or create new ones that include filters, sorting, and column arrangements, making it easier to quickly access and prioritize groups of orders in the future.
+Par défaut, toutes vos commandes sont affichées sur la page des Commandes. Vous pouvez personnaliser vos vues de commandes ou en créer de nouvelles qui incluent des filtres et des tris, ce qui facilite l'accès rapide et la priorisation des groupes de commandes à l'avenir.
 
-## Viewing details from the orders list
+![Commandes Becomy](../../static/img/order-filters.png)
 
-When you click parts of the orders list, you can view order details.
+## Affichage des détails depuis la liste des commandes
 
-For example, clicking a customer's name will show details like customer location, number of orders, and contact information.
+Vous pouvez trier les commandes ou appliquer différents filtres disponibles afin de voir des commandes spécifiques en fonction de ces filtres ou de cette méthode de tri.
 
-Icons next to your order numbers also provide extra information. For example, you can see if there are notes or comments on the order or if it's at high risk of fraud. Hover over an icon to open the pop-up.
+### Filtrer vos commandes
 
-## Filtering orders
+Les filtres déterminent quelles commandes sont affichées dans une vue de commandes. Par exemple, la vue **Tout** n'a pas de filtres. La vue par défaut **Non Exécutée** utilise le filtre **Statut de Fulfillment** défini sur "non exécutée" pour afficher toutes les commandes non exécutées dans votre boutique.
 
-In your Becomy admin, you can use filters to control which orders are displayed and perform bulk actions on multiple orders. You can also filter orders using a custom search. To reuse filters, you can save them as order views.
+Vous pouvez également combiner des filtres pour afficher des commandes qui correspondent à plusieurs critères. Par exemple, vous pouvez combiner les filtres **ouvert** et **non exécuté** pour voir les commandes qui sont à la fois à faible risque et non payées.
 
-You can do the following with order filters:
+### Filtres Disponibles
 
-- Filter your orders
-- Filter by location
-- Filter with a custom term
-- Use bulk actions with a view or filter
-- Match third-party payment information with Becomy orders
+Vous pouvez appliquer les filtres suivants sur votre liste de commandes :
 
-:::note
+- **Méthode de Livraison** : livraison locale, retrait en magasin, expédition au client
+- **Emplacement** : continent, pays, état/province où la commande sera expédiée
+- **Statut** : ouvert, fermé.
+- **Statut de Paiement** : autorisé, payé, partiellement payé, partiellement remboursé, en attente, remboursé, non payé, annulé
+- **Statut de Fulfillment** : exécuté, non exécuté, remboursé, programmé, en attente
+- **Statut de Livraison** : en transit, en cours de livraison, livraison tentée, retardé, échec de livraison, livré, suivi ajouté, aucun statut
+- **Date** : la semaine dernière, le mois, les 3 mois, l'année, ou personnalisé
+- **Méthode de Paiement** : quelle méthode de paiement est utilisée pour cette commande
+- **Entrepôt** : si vous avez plusieurs entrepôts, vous pouvez également filtrer les commandes sur la base d'un entrepôt spécifique.
 
-To save your order filters, learn more about making changes to the current view or creating a new view.
+![Filtres de Commande Becomy](../../static/img/orders-filtering.png)
 
-:::
+### Méthodes de Tri Disponibles
 
-### Filter your orders
+Vous pouvez appliquer les méthodes de tri suivantes sur votre liste de commandes :
 
-Filters determine which orders are displayed in an order view. For instance, the **All** view has no filters. The default **Unfulfilled** view uses the **Fulfillment status** filter set to "unfulfilled" to show all unfulfilled orders in your store.
+- **le plus ancien au plus récent**
+- **le plus récent au plus ancien**
+- **alphabétiquement de a à z**
+- **alphabétiquement de z à a**
 
-You can also combine filters to display orders that match multiple criteria. For example, you can combine the **Low risk** and **Unpaid** filters to see orders that are both low risk and unpaid.
+![Tri de Commande Becomy](../../static/img/orders-sorting.png)
 
-### Available filters
+## Vues de Commandes
 
-You can apply the following filters on your order list:
+Une vue de commande est un affichage personnalisé des commandes basé sur les critères que vous définissez pour faciliter les tâches. Les vues de commandes sont créées à l'aide de filtres enregistrés, de choix de colonnes, d'ordre de colonnes et d'ordre de tri. Les vues de commandes apparaissent sous forme d'onglets en haut de la page des Commandes. Vous pouvez personnaliser, créer, renommer ou supprimer ces vues. Lorsqu'une nouvelle vue de commande est créée, elle est ajoutée en tant que nouvel onglet sur la page des Commandes.
 
-- **Delivery Method**: local delivery, pickup in-store, ship to customer
-- **Destination**: continent, country, state/province where the order is shipped
-- **Status**: open, closed.
-- **Payment status**: authorized, paid, partially paid, partially refunded, pending, refunded, unpaid, voided
-- **Product**: filter by product title or SKU
-- **Fulfillment status**: fulfilled, unfulfilled, refunded, scheduled, on hold
-- **Delivery status**: in transit, out for delivery, attempted delivery, delayed, failed delivery, delivered, tracking added, no status
-- **Date**: in the last week, month, 3 months, year, or custom
+### Vues de Commandes par Défaut :
 
-You can only save changes to order views from the Becomy admin on a desktop computer.
+- **Tout**
+- **Non Exécuté**
+- **Exécuté**
+- **Remboursé**
+- **Ouvert**
+- **Fermé**
 
-## Order views
+Si **l'Emplacement** est activé pour votre boutique, une vue **Livraison Locale** est également disponible.
 
-An order view is a customized display of orders based on the criteria you set to make tasks easier. Order views are created using saved filters, column choices, column order, and sort order. Order views appear as tabs at the top of the Orders page. You can customize, create, rename, or delete these views. When a new order view is created, it’s added as a new tab on the Orders page.
+Dans toute vue sauf **Tout**, vous pouvez :
 
-### Default order views:
+- Sélectionner des filtres
+- Choisir des critères de tri et l'ordre de tri
+- Choisir n'importe lequel des filtres
 
-- **All**
-- **Unfulfilled**
-- **Unpaid**
-- **Open**
-- **Closed**
-
-If **Locations** is activated for your store, a **Local Delivery** view is also available.
-
-In any view except **All**, you can:
-
-- Select filters
-- Show or hide columns
-- Reorder columns
-- Choose sorting criteria and sorting order
-- Filter using a custom search term
-- Rename the view
-- Delete the view
-
-Although you can't change or delete the **All** view, you can create a new view based on it.
-
-Orders in saved views are updated automatically. For instance, if you saved a filter for **Paid** orders, any orders that are paid afterward will automatically appear in that view.
+Les commandes dans les vues enregistrées sont mises à jour automatiquement. Par exemple, si vous avez enregistré un filtre pour les commandes **exécutées**, toutes les commandes qui sont exécutées par la suite apparaîtront automatiquement dans cette vue.

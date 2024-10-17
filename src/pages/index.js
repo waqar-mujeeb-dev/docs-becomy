@@ -82,7 +82,7 @@ function HomepageHeader() {
       />
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className="container">
-          <Heading as="h1" className="hero__title ">
+          <Heading as="h1" className="hero__title  ">
             <Translate id="theme.website.title" description="website title">
               {siteConfig.title}
             </Translate>
