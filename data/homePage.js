@@ -46,7 +46,7 @@ export const cardData = [
         gradientColor: "from-blue-500 to-white",
         description:
           "Learn about the payment options, transaction processes, and managing your earnings on Becomy",
-        url: "/",
+        url: "/payments",
       },
       {
         title_id: "homepage.manage.orders.title",
