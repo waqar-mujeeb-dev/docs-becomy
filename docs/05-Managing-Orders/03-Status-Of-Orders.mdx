@@ -16,6 +16,7 @@ Keywords:
 ---
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
+import { Table } from "@site/src/components/DataTable";
 
 <head>
   <meta
@@ -43,29 +44,63 @@ You can filter your orders using different combinations of order statuses.
 
 Orders can either be **Open** or **Archived**, but may also have additional statuses. Archived orders that were canceled will show both **Canceled** and **Archived** statuses. Orders have one or more of the following statuses:
 
-| Status       | Description                                                                                                                  |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------- |
-| **Open**     | The order was placed or created. There is work to do, such as processing payment, fulfilling the order, or handling returns. |
-| **Archived** | The order was manually or automatically archived.                                                                            |
-| **Canceled** | The order was canceled. If it wasn’t fully refunded, there might still be work remaining.                                    |
+<Table
+  headers={["Status", "Description"]}
+  rows={[
+    [
+      "Open",
+      "The order was placed or created. There is work to do, such as processing payment, fulfilling the order, or handling returns.",
+    ],
+    ["Archived", "The order was manually or automatically archived."],
+    [
+      "Canceled",
+      "The order was canceled. If it wasn’t fully refunded, there might still be work remaining.",
+    ],
+  ]}
+/>
 
 ## Payment Status
 
 The payment status of an order is crucial in determining the tasks you need to complete. Orders can have one or more of the following payment statuses:
 
-| Status                 | Description                                                                                                                                                                                                                      |
-| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Pending**            | Payment is pending because either the customer used a payment method that takes time to process, or you set the payment terms when creating the order. This status also applies to manual payment methods like Cash on Delivery. |
-| **Authorized**         | The payment provider validated the payment information. This is displayed if you capture payments manually. You need to capture the payment before the authorization period expires.                                             |
-| **Overdue**            | Payment wasn’t captured before the due date set in the payment terms.                                                                                                                                                            |
-| **Expiring**           | This isn’t a payment status, but an expiring badge appears two days before the deadline for capturing an **Authorized** payment.                                                                                                 |
-| **Expired**            | Payment wasn’t captured before the expiration set by the payment provider. For some providers, this indicates a failed payment.                                                                                                  |
-| **Paid**               | The payment was captured, either automatically or manually, or the order was marked as paid.                                                                                                                                     |
-| **Refunded**           | The full amount paid by the customer was refunded.                                                                                                                                                                               |
-| **Partially refunded** | A portion of the total payment was refunded.                                                                                                                                                                                     |
-| **Partially paid**     | A partial payment was captured for the order.                                                                                                                                                                                    |
-| **Voided**             | The unpaid order was canceled.                                                                                                                                                                                                   |
-| **Unpaid**             | This status includes orders in **Authorized**, **Pending**, **Expired**, and **Partially paid** statuses.                                                                                                                        |
+<Table
+  headers={["Status", "Description"]}
+  rows={[
+    [
+      "Pending",
+      "Payment is pending because either the customer used a payment method that takes time to process, or you set the payment terms when creating the order. This status also applies to manual payment methods like Cash on Delivery.",
+    ],
+    [
+      "Authorized",
+      "The payment provider validated the payment information. This is displayed if you capture payments manually. You need to capture the payment before the authorization period expires.",
+    ],
+    [
+      "Overdue",
+      "Payment wasn’t captured before the due date set in the payment terms.",
+    ],
+    [
+      "Expiring",
+      "This isn’t a payment status, but an expiring badge appears two days before the deadline for capturing an **Authorized** payment.",
+    ],
+    [
+      "Expired",
+      "Payment wasn’t captured before the expiration set by the payment provider. For some providers, this indicates a failed payment.",
+    ],
+    [
+      "Paid",
+      "The payment was captured, either automatically or manually, or the order was marked as paid.",
+    ],
+    ["Refunded", "The full amount paid by the customer was refunded."],
+    ["Partially refunded", "A portion of the total payment was refunded."],
+    ["Partially paid", "A partial payment was captured for the order."],
+    ["Voided", "The unpaid order was canceled."],
+    [
+      "Unpaid",
+      "This status includes orders in Authorized, Pending**, Expired, and Partially paid statuses.",
+    ],
+  ]}
+/>
+|
 
 ## Fulfillment Status
 
@@ -91,9 +126,21 @@ Manual fulfillment holds also show the **On hold** status.
 
 Orders can have multiple returns, and this status indicates the most important return-related task. Orders without returns don’t have a return status. If an order has at least one return, it will have one of the following statuses:
 
-| Status                  | Description                                                                                                          |
-| ----------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **Return requested**    | A return was requested for items in the order. You can approve or decline the request.                               |
-| **Return in progress**  | The return was approved or created in the Becomy admin. You can manage the return, restock items, or issue a refund. |
-| **Returned**            | The return is complete, and no further action is required.                                                           |
-| **Inspection complete** | The items in the return were inspected, and you can refund the return based on the inspection results.               |
+<Table
+  headers={["Status", "Description"]}
+  rows={[
+    [
+      "Return requested",
+      "A return was requested for items in the order. You can approve or decline the request.",
+    ],
+    [
+      "Return in progress",
+      "The return was approved or created in the Becomy admin. You can manage the return, restock items, or issue a refund.",
+    ],
+    ["Returned", "The return is complete, and no further action is required."],
+    [
+      "Inspection complete",
+      "The items in the return were inspected, and you can refund the return based on the inspection results.",
+    ],
+  ]}
+/>
