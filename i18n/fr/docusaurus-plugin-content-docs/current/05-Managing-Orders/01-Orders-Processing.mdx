@@ -1,5 +1,5 @@
 ---
-title: Traitement des Commandes
+title: Traitement des commandes
 hide_title: true
 slug: /orders/orders-processing
 description: Apprenez tout sur le traitement des commandes, de la réception à l'exécution.
@@ -7,15 +7,16 @@ custom_edit_url: null
 toc_min_heading_level: 2
 toc_max_heading_level: 5
 Keywords:
-  - Éditeur de Texte Riche
-  - Formatage de Contenu
-  - Stylisation de Texte
+  - Éditeur de texte enrichi
+  - Mise en forme du contenu
+  - Stylisation du texte
   - Images
-  - Marquage HTML
+  - Balisage HTML
   - Vidéos
 ---
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
+import { Table } from "@site/src/components/DataTable";
 
 <head>
   <meta
@@ -34,45 +35,31 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
   />
 </head>
 
-# Traitement des Commandes
+# Traitement des commandes
 
-Lorsqu'un client achète dans votre boutique en ligne ou tout autre canal de vente, cela apparaît comme une nouvelle commande sur la page des Commandes dans Becomy.
+Lorsque qu'un client achète sur votre boutique en ligne ou tout autre canal de vente, cela apparaît comme une nouvelle commande sur la page des commandes dans le tableau de bord administrateur de Becomy.
 
 ## Que se passe-t-il lorsque vous recevez une commande en ligne
 
 - Vous recevez une notification de nouvelle commande par e-mail.
-- La page des Commandes dans Becomy affiche la nouvelle commande.
+- La page des commandes dans Becomy affiche la nouvelle commande.
 - Le client reçoit un e-mail de confirmation de commande.
 - Le traitement de la commande commence.
 
 :::info
 
-Un checkout abandonné est créé si une commande n'a pas été finalisée, mais que le client a atteint le checkout.
+Un panier abandonné est créé si une commande n'a pas été complétée, mais que le client a atteint le paiement.
 :::
 
 ## Flux de traitement typique des commandes en ligne
 
 Chaque commande en ligne passe par 3 étapes. À chaque étape, une action différente est requise dans Becomy. Vous pouvez soit configurer Becomy pour effectuer ces actions automatiquement, soit les gérer manuellement :
 
-<table>
-  <thead>
-    <tr>
-      <th>État de la commande</th>
-      <th>Ce que vous devez faire</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1. La commande a été passée.</td>
-      <td>Capturer le paiement.</td>
-    </tr>
-    <tr>
-      <td>2. La commande a été payée.</td>
-      <td>Exécuter la commande.</td>
-    </tr>
-    <tr>
-      <td>3. La commande a été exécutée et payée.</td>
-      <td>Archiver la commande.</td>
-    </tr>
-  </tbody>
-</table>
+<Table
+  headers={["État de la commande", "Ce que vous devez faire"]}
+  rows={[
+    ["1. La commande a été passée.", "Capturer le paiement."],
+    ["2. La commande a été payée.", "Exécuter la commande."],
+    ["3. La commande a été exécutée et payée.", "Archiver la commande."],
+  ]}
+/>
