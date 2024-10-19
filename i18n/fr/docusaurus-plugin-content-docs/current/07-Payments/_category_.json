@@ -1,0 +1,13 @@
+{
+  "label": "Paiements",
+  "collapsible": true,
+  "collapsed": false,
+  "className": "hidden",
+  "link": {
+    "type": "generated-index",
+    "title": "Comprendre le processus de paiement",
+    "slug": "/payments",
+    "description": "Lorsque un client finalise une commande dans votre boutique Becomy, il a plusieurs options de paiement disponibles, selon les méthodes que vous avez activées dans votre panneau d'administration Becomy. Vous pouvez configurer et gérer divers passerelles de paiement pour offrir à vos clients de la flexibilité lors du paiement. Becomy prend en charge une gamme de fournisseurs de paiement, vous aidant à choisir celui qui convient le mieux aux besoins de votre entreprise.",
+    "keywords": ["paiements, Apple Pay, Carte de Crédit, Payouts"]
+  }
+}
