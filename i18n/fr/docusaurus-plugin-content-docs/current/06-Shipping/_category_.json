@@ -7,9 +7,6 @@
     "type": "generated-index",
     "title": "Configuration d'expédition",
     "slug": "/shipping",
-    "description": "L'exécution des commandes et la configuration d'expédition peuvent être l'un des aspects les plus complexes de la gestion d'une entreprise. Cela peut également représenter un coût significatif par commande, rendant difficile de déterminer combien de ce coût facturer à vos clients. Vous pouvez explorer les différents transporteurs d'expédition, les tarifs d'expédition disponibles et apprendre à coordonner avec les services d'exécution. Une fois que vous êtes familiarisé avec le fonctionnement de l'expédition dans Becomy, vous pouvez configurer vos configurations d'expédition, y compris les tarifs d'expédition, les profils d'expédition, le routage des commandes et l'inventaire gérable.",
-    "keywords": [
-      "commandes, recherche-commandes, collections, expédition, tarification"
-    ]
+    "description": "L'exécution des commandes et la configuration d'expédition peuvent être l'un des aspects les plus complexes de la gestion d'une entreprise. Cela peut également représenter un coût significatif par commande, rendant difficile de déterminer combien de ce coût facturer à vos clients. Vous pouvez explorer les différents transporteurs d'expédition, les tarifs d'expédition disponibles et apprendre à coordonner avec les services d'exécution. Une fois que vous êtes familiarisé avec le fonctionnement de l'expédition dans Becomy, vous pouvez configurer vos configurations d'expédition, y compris les tarifs d'expédition, les profils d'expédition, le routage des commandes et l'inventaire gérable."
   }
 }
