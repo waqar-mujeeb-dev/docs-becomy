@@ -1,0 +1,88 @@
+---
+title: Paiement pour vos commandes
+hide_title: true
+slug: /payments/getting-paid
+description: Comprendre la liste de contrôle pour configurer les expéditions dans votre boutique Becomy.
+custom_edit_url: null
+toc_min_heading_level: 2
+toc_max_heading_level: 5
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import { Table } from "@site/src/components/DataTable";
+
+<head>
+  <meta
+    property="twitter:description"
+    content="Découvrez les options de paiement, les processus de transaction et la gestion de vos revenus sur Becomy"
+  />
+  <meta
+    property="og:url"
+    content="https://docs-becomy.surge.sh/payments/getting-paid"
+  />
+  <link rel="canonical" href="https://docs-becomy.surge.sh/payments" />
+  <link
+    rel="alternate"
+    href="https://docs-becomy.surge.sh/payments/fr"
+    hreflang="fr"
+  />
+</head>
+
+# Paiement pour vos commandes
+
+Tous les moyens de paiement pris en charge par Becomy utilisent des services tiers pour gérer vos transactions. Ces prestataires peuvent avoir des `frais` supplémentaires et des conditions spécifiques concernant les produits que vous pouvez vendre via leur plateforme. Lorsque vous choisissez un moyen de paiement, il est important de consulter les règles et la structure tarifaire du prestataire pour vous assurer qu'ils correspondent à vos `besoins commerciaux`.
+
+## Vue d'ensemble du processus de paiement
+
+Lorsque vous configurez un prestataire de paiement pour accepter les transactions par carte de crédit, chaque paiement passe par une `phase de traitement`. Cela signifie souvent qu'il y a un délai entre le moment où un client effectue un achat et celui où vous recevez réellement les fonds. Une fois le paiement traité, le montant est directement transféré sur votre `compte marchand`.
+
+Les services de paiement tels que PayPal ou Apple Pay ont leurs propres méthodes pour transférer les fonds de votre client vers votre compte professionnel. Assurez-vous de vérifier auprès de chaque prestataire pour comprendre leur `processus de paiement`. En plus des paiements en ligne, vous pouvez également accepter des paiements manuels comme les `transferts bancaires` ou les `mandats postaux`. Cependant, il est important de noter que Becomy facturera des frais de transaction tiers pour les commandes traitées via des passerelles externes comme PayPal, si elles ne sont pas gérées directement par `Becomy Payments`.
+
+## Comment vous êtes payé
+
+Pour les paiements par carte de crédit, après traitement de la transaction, le montant est transféré sur votre `compte marchand`. Des services tels que PayPal Express Checkout suivent leurs propres procédures, il est donc conseillé de confirmer leurs processus de paiement spécifiques. Avec Apple Pay, les paiements sont simplifiés et généralement traités via la plateforme de paiement Becomy.
+
+Voici un résumé de la manière dont les paiements sont traités en fonction du moyen de paiement utilisé :
+
+<Table
+  headers={["Moyen de paiement", "Comment vous êtes payé"]}
+  rows={[
+    ["Carte de Crédit", "Via votre compte marchand"],
+    ["Apple Pay", "Via Becomy Payments"],
+    ["PayPal Express Checkout", "Directement via PayPal"],
+  ]}
+/>
+
+## Fréquence des paiements
+
+Les différents prestataires de paiement, tels que PayPal, ont leurs propres délais de versement. Assurez-vous de consulter votre prestataire pour comprendre à quelle fréquence vous recevrez vos fonds.
+
+Gardez à l'esprit que même après l'envoi d'un versement, il peut s'écouler quelques jours avant que l'argent n'apparaisse sur votre `compte bancaire`, en fonction des délais de traitement de votre banque. Si vous constatez des retards, vérifiez auprès de votre banque s'il y a une raison particulière.
+
+Si vos coordonnées bancaires changent, vous pouvez mettre à jour ces informations dans votre `panneau d'administration Becomy` pour garantir la continuité de vos versements. Notez également que les paiements ne seront pas traités les jours `fériés bancaires`.
+
+## Montant des paiements
+
+Des `frais` de transaction tiers peuvent vous être facturés pour les transactions en ligne. Pour les transactions par carte de crédit, l'émetteur, l'acquéreur et la société de cartes de crédit facturent tous un petit `frais` pour l'utilisation de leurs services.
+
+## Comment un paiement par carte de crédit est traité
+
+Lorsqu'un client paie sa commande en ligne avec une carte de crédit, le `paiement` doit être traité avant que les fonds ne soient ajoutés à votre `compte marchand`. Le traitement des paiements par carte de crédit est effectué pour vous par votre `prestataire de paiement`. Ce processus se déroule en plusieurs étapes :
+
+- ### Autorisation
+
+Le client utilise sa carte de crédit pour payer la commande sur votre `boutique`. Le prestataire de paiement que vous avez configuré vérifie auprès de l'émetteur pour s'assurer que la carte de crédit est valide. Si la carte est valide et dispose de suffisamment de fonds, alors l'émetteur autorise le paiement. Aucun fonds n'est transféré à ce stade.
+
+- ### Capture
+
+Une fois le paiement autorisé, il doit être capturé. Lorsqu'un paiement est capturé, les détails du paiement sont envoyés à l'`acquéreur`.
+
+- ### Compensation
+
+L'acquéreur examine les détails du paiement, puis demande les fonds nécessaires à la société qui traite la carte de crédit du client.
+
+La société de cartes de crédit envoie les informations de la transaction à l'émetteur. L'émetteur soustrait un petit frais du montant total de la transaction, puis renvoie le montant restant à la société de cartes de crédit. La société de cartes soustrait ses frais, puis envoie le montant restant à l'acquéreur.
+
+- ### Financement
+
+L'acquéreur soustrait un petit frais du montant, puis transfère le montant final sur votre `compte marchand`.

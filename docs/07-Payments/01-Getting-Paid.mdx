@@ -6,16 +6,10 @@ description: understand the checklist for setting up shipping in your becomy sto
 custom_edit_url: null
 toc_min_heading_level: 2
 toc_max_heading_level: 5
-Keywords:
-  - Rich Text Editor
-  - Content Formatting
-  - Text Styling
-  - Images
-  - HTML Markup
-  - Videos
 ---
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
+import { Table } from "@site/src/components/DataTable";
 
 <head>
   <meta
@@ -50,11 +44,14 @@ For credit card payments, after the transaction is processed, the amount is tran
 
 Here's a summary of how payments are processed based on the payment method used:
 
-| Payment Method            | How the Customer Pays | How You Get Paid          |
-| ------------------------- | --------------------- | ------------------------- |
-| `Credit Card`             | Using credit cards    | Via your merchant account |
-| `Apple Pay`               | Using Apple Pay       | Through Becomy Payments   |
-| `PayPal Express Checkout` | Using PayPal          | Directly from PayPal      |
+<Table
+  headers={["Payment Method", "How You Get Paid"]}
+  rows={[
+    ["Credit Card", "Via your merchant account"],
+    ["Apple Pay", "Through Becomy Payments"],
+    ["PayPal Express Checkout", "Directly from PayPal"],
+  ]}
+/>
 
 ## How Often You Get Paid
 
