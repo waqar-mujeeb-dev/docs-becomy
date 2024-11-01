@@ -1,0 +1,13 @@
+{
+  "label": "Modèle de Boutique",
+  "collapsible": true,
+  "collapsed": false,
+  "className": "hidden",
+  "link": {
+    "type": "generated-index",
+    "title": "Modèle de Boutique",
+    "slug": "/store-template",
+    "description": "Découvrez tout sur la personnalisation de votre boutique, y compris les thèmes, les pages personnalisées et la configuration des blogs.",
+    "keywords": ["modèle-de-boutique, thèmes, personnalisation, blogs"]
+  }
+}
