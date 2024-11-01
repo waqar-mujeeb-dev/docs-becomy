@@ -1,0 +1,13 @@
+{
+  "label": "Store Template",
+  "collapsible": true,
+  "collapsed": false,
+  "className": "hidden",
+  "link": {
+    "type": "generated-index",
+    "title": "Store Template",
+    "slug": "/store-template",
+    "description": "Learn all about your store customization including themes, custom pages and blogs configuration.",
+    "keywords": ["store-template, themes, customization, blogs"]
+  }
+}
