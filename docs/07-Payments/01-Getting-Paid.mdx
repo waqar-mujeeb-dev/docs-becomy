@@ -1,0 +1,91 @@
+---
+title: Getting paid for your orders
+hide_title: true
+slug: /payments/getting-paid
+description: understand the checklist for setting up shipping in your becomy store.
+custom_edit_url: null
+toc_min_heading_level: 2
+toc_max_heading_level: 5
+Keywords:
+  - Rich Text Editor
+  - Content Formatting
+  - Text Styling
+  - Images
+  - HTML Markup
+  - Videos
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl";
+
+<head>
+  <meta
+    property="twitter:description"
+    content="Learn about the payment options, transaction processes, and managing your earnings on Becomy"
+  />
+  <meta
+    property="og:url"
+    content="https://docs-becomy.surge.sh/payments/getting-paid"
+  />
+  <link rel="canonical" href="https://docs-becomy.surge.sh/payments" />
+  <link
+    rel="alternate"
+    href="https://docs-becomy.surge.sh/payments/fr"
+    hreflang="fr"
+  />
+</head>
+
+# Getting Paid For Your Orders
+
+All Becomy-supported payment methods use third-party services to handle your transactions. These providers might have additional `fees` and specific terms regarding what products you can sell through their platform. When you choose a payment method, it’s important to review the provider’s rules and fee structures to ensure they align with your `business needs`.
+
+## Payment Process Overview
+
+When you set up a payment provider to accept credit card transactions, each payment goes through a `processing phase`. This often means there is a delay between when a customer makes a purchase and when you actually receive the funds. Once the payment is processed, the amount will be transferred directly to your `merchant account`.
+
+Payment services like PayPal or Apple Pay will have their own methods for transferring funds from your customer to your business account. Make sure to check with each provider to understand their `payout process`. In addition to online payments, you can also accept manual payments like `bank transfers` or `money orders`. However, it's important to note that Becomy will charge third-party transaction fees for orders processed through external gateways like PayPal if they are not handled directly by `Becomy Payments`.
+
+## How You Get Paid
+
+For credit card payments, after the transaction is processed, the amount is transferred to your `merchant account`. Services like PayPal Express Checkout will follow their own procedures, so it’s a good idea to confirm their specific payout processes. With Apple Pay, the payments are streamlined and typically processed via Becomy’s payment platform.
+
+Here's a summary of how payments are processed based on the payment method used:
+
+| Payment Method            | How the Customer Pays | How You Get Paid          |
+| ------------------------- | --------------------- | ------------------------- |
+| `Credit Card`             | Using credit cards    | Via your merchant account |
+| `Apple Pay`               | Using Apple Pay       | Through Becomy Payments   |
+| `PayPal Express Checkout` | Using PayPal          | Directly from PayPal      |
+
+## How Often You Get Paid
+
+Different payment providers, such as PayPal, have their own payout timelines. Be sure to consult with your provider to understand how frequently you’ll receive your funds.
+
+Keep in mind that even after a payout is sent, it may take a few days before the money appears in your `bank account`, depending on your bank's processing times. If you notice any delays, check with your bank to see if there's a specific reason for the holdup.
+
+If your banking details change, you can update this information in your `Becomy admin panel` to ensure your payouts continue without disruption. Also, be aware that payouts won’t be processed on `bank holidays`.
+
+## How Much You Get Paid
+
+You can be charged several `third-party` transaction `fees` for online transactions. For credit card transactions, the issuer, the acquirer, and the credit card company all charge a small `fee` for using their services.
+
+## How a Credit Card Payment Gets Processed
+
+When a customer pays for their online order using a credit card, the `payment` has to be processed before the funds are added to your `merchant account`. Credit card processing is done for you by your `payment provider`. This process has the following stages:
+
+- ### Authorization
+
+The customer uses their credit card to pay for the order on your `store`. The payment provider you've set up checks with the issuer to make sure the credit card is valid. If the card is valid and has enough funds, then the issuer authorizes the payment. No funds are transferred at this stage.
+
+- ### Capture
+
+After the payment is authorized, the payment has to be captured. When a payment is captured, details about the payment are sent to the `acquirer`.
+
+- ### Clearing
+
+The acquirer reviews the payment details, and then requests the necessary funds from the company that processes the customer's credit card.
+
+The credit card company sends the transaction information to the issuer. The issuer subtracts a small fee from the total transaction amount, and then sends the remaining amount back to the credit card company. The card company subtracts their fee, and then sends the remaining amount to the acquirer.
+
+- ### Funding
+
+The acquirer subtracts a small fee from the amount, and then transfers the final amount to your `merchant account`.

@@ -1,0 +1,13 @@
+{
+  "label": "Payments",
+  "collapsible": true,
+  "collapsed": false,
+  "className": "hidden",
+  "link": {
+    "type": "generated-index",
+    "title": "Understand Payment Process",
+    "slug": "/payments",
+    "description": "When a customer completes an order in your Becomy store, they have multiple payment options available, depending on the methods you've activated in your Becomy admin panel. You can set up and manage various payment gateways to give your customers flexibility at checkout. Becomy supports a range of payment providers, helping you choose the one that best suits your business needs.",
+    "keywords": ["payments, Apple Pay, Credit Card Pay, Payouts"]
+  }
+}

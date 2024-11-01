@@ -16,6 +16,7 @@ Keywords:
 ---
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
+import { Table } from "@site/src/components/DataTable";
 
 <head>
   <meta
@@ -54,25 +55,11 @@ An abandoned checkout is created if an order wasn't completed, but the customer 
 
 Every online order goes through 3 stages. At each stage, a different action is required in Becomy. You can either set up Becomy to perform these actions automatically or handle them manually:
 
-<table>
-  <thead>
-    <tr>
-      <th>Order state</th>
-      <th>What you need to do</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1. Order has been placed.</td>
-      <td>Capture payment.</td>
-    </tr>
-    <tr>
-      <td>2. Order has been paid.</td>
-      <td>Fulfill the order.</td>
-    </tr>
-    <tr>
-      <td>3. Order has been fulfilled and paid.</td>
-      <td>Archive the order.</td>
-    </tr>
-  </tbody>
-</table>
+<Table
+  headers={["Order state", "What you need to do"]}
+  rows={[
+    ["1. Order has been placed.", "Capture payment."],
+    ["2. Order has been paid.", "Fulfill the order."],
+    ["3. Order has been fulfilled and paid.", "Archive the order."],
+  ]}
+/>

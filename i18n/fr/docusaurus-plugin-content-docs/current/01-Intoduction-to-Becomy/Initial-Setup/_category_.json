@@ -1,0 +1,14 @@
+{
+  "position": 2.5,
+  "label": "Configuration Initiale",
+  "collapsible": true,
+  "collapsed": false,
+  "className": "hidden",
+  "link": {
+    "type": "generated-index",
+    "title": "Initial Setup",
+    "slug": "/introduction-to-becomy/initial-setup",
+    "description": "Découvrez les fonctionnalités clés de Becomy, les méthodes de vente, notre fiabilité, nos plans tarifaires et où trouver de l'aide",
+    "keywords": ["guides"]
+  }
+}
