@@ -1,0 +1,13 @@
+{
+  "label": "Compte",
+  "collapsible": true,
+  "collapsed": false,
+  "className": "hidden",
+  "link": {
+    "type": "generated-index",
+    "title": "Compte",
+    "slug": "/account",
+    "description": "Découvrez tout sur la configuration de votre compte pour bien commencer.",
+    "keywords": ["bien commencer, compte, inscription, connexion"]
+  }
+}

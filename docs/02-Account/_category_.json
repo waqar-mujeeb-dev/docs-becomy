@@ -1,0 +1,13 @@
+{
+  "label": "Account",
+  "collapsible": true,
+  "collapsed": false,
+  "className": "hidden",
+  "link": {
+    "type": "generated-index",
+    "title": "Account",
+    "slug": "/account",
+    "description": "Learn all about your account setup and configuration for getting things started.",
+    "keywords": ["getting started, account, signup, login"]
+  }
+}
