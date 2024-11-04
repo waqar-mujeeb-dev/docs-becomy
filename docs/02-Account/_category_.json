@@ -1,12 +1,12 @@
 {
-  "label": "Getting Started",
+  "label": "Account",
   "collapsible": true,
   "collapsed": false,
   "className": "hidden",
   "link": {
     "type": "generated-index",
-    "title": "Getting Started",
-    "slug": "/getting-started",
+    "title": "Account",
+    "slug": "/account",
     "description": "Learn all about your account setup and configuration for getting things started.",
     "keywords": ["getting started, account, signup, login"]
   }
