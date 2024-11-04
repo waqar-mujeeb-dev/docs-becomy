@@ -22,7 +22,7 @@ export const cardData = [
         gradientColor: "from-green-500 to-white dark:from-white dark:to-white",
         description:
           "Understand how to set up and manage your Becomy account for optimal selling experience",
-        url: "/introduction-to-becomy/initial-setup/",
+        url: "/getting-started/",
       },
     ],
   },
