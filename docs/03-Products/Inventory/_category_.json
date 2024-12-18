@@ -1,0 +1,13 @@
+{
+  "label": "Inventory",
+  "collapsible": true,
+  "collapsed": false,
+  "className": "hidden",
+  "link": {
+    "type": "generated-index",
+    "title": "Inventory",
+    "slug": "/inventory",
+    "description": "Inventory is the quantity of a particular product that is available for sale.",
+    "keywords": ["products, inventory, collections, quantity, sale"]
+  }
+}

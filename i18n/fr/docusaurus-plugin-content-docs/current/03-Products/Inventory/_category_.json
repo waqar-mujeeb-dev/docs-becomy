@@ -1,0 +1,13 @@
+{
+  "label": "Inventaire",
+  "collapsible": true,
+  "collapsed": false,
+  "className": "hidden",
+  "link": {
+    "type": "generated-index",
+    "title": "Inventory",
+    "slug": "/inventory",
+    "description": "L'inventaire est la quantité d'un produit spécifique disponible à la vente.",
+    "keywords": ["produits, inventaire, collections, quantité, vente"]
+  }
+}
